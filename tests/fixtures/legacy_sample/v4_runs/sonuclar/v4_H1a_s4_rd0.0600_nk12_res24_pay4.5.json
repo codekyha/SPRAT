@@ -1,0 +1,76 @@
+{
+ "parametreler": {
+  "mod": "harminv",
+  "katman": "uretim",
+  "a_nm": 481.4,
+  "r": 0.2,
+  "rd": 0.06,
+  "dx": 0.0,
+  "dy": 0.0,
+  "nsep": 4,
+  "na": 1.33,
+  "kappa": 0.0,
+  "nx": 25,
+  "nkaplama": 12,
+  "res": 24,
+  "nfreq": 201,
+  "t_harminv": 32000.0,
+  "dpml": 1.0,
+  "pad": 1.5,
+  "ypad": 1.0,
+  "sonlandirma": "pml",
+  "emici_kalinlik": 8.0,
+  "bariyer_satir_r": "",
+  "fcen": 0.3105806452,
+  "df": 0.06,
+  "f_rez": 0.0,
+  "q_tahmin": 6927.0,
+  "dft_tol": 1e-06,
+  "t_max_spektrum": 40000.0,
+  "t_max_harminv": 30000.0,
+  "t_alan_max": 20000.0,
+  "otomatik_t": false,
+  "otomatik_kat": 4.0,
+  "simetri": "oto",
+  "etiket": "v4_H1a_s4_rd0.0600_nk12_res24_pay4.5",
+  "zorla": false,
+  "sessiz": true,
+  "kavite": true,
+  "bariyer_satirlari": {}
+ },
+ "olcum": {
+  "baslangic": "2026-09-17T11:53:56",
+  "dugum": "a084",
+  "is_no": "524774",
+  "dizi_no": "",
+  "paket": "v4",
+  "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+  "adim": 1544001,
+  "zaman": 32166.6875,
+  "piksel": 501120,
+  "simetri": "cift",
+  "duvar_s": 995.4814085960388,
+  "piksel_adim": 386864890560.0,
+  "piksel_adim_s": 388620909.66179734
+ },
+ "sonuc": {
+  "modlar": [
+   {
+    "f": 0.3046140802122781,
+    "Q": 6927.173648486342,
+    "genlik": 5.923281857831656,
+    "hata": 1.4941156670774562e-10,
+    "lambda_nm": 1580.360302664027,
+    "FWHM_nm": 0.2281392647070933
+   }
+  ],
+  "t_harminv_kullanilan": 32000.0,
+  "otomatik_gecmis": [
+   {
+    "t": 32000.0,
+    "Q": 6927.173648486342
+   }
+  ],
+  "Q_cozunurluk_siniri": 31222.971945839938
+ }
+}

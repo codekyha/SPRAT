@@ -1,0 +1,16 @@
+# Full lattice with the W1 guide and no point defect (the cavity-less reference of the spectra is
+# obtained with mode = reference, which ignores the defect anyway; this file makes the absence explicit).
+[lattice]
+a_nm = 481.4
+rod_radius = 0.20
+rod_eps = 11.9025
+
+[cell]
+guide_periods = 25
+cladding_rows = 12
+
+[waveguide]
+type = W1
+
+[defect]
+type = none

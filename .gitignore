@@ -1,0 +1,35 @@
+# Build residue, wherever it appears
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Outputs of the build and of the sprat commands. The leading slash anchors each pattern to the
+# repository root, so that package folders of the same name (sprat/figures/) are not excluded.
+/build/
+/dist/
+/records/
+/selftest_records/
+/tables/
+/figures/
+/logs/
+/deposit*/
+/calibration.json
+/tasks*.jsonl
+/tasks*.tsv
+/tasks*.summary.md
+/campaigns/manuscript/tasks_*.jsonl
+/campaigns/manuscript/tasks_*.tsv
+/campaigns/manuscript/tasks_*.summary.md
+/*.zip
+/*.tar.gz
+
+# The unpacked deposit that the full test suite can use
+/tests/data/
+
+# Local environments and operating-system files
+/.venv/
+/venv/
+.DS_Store
+Thumbs.db
+desktop.ini

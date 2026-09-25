@@ -1,0 +1,43 @@
+{
+ "id": "H14b-A1A2",
+ "amends": "predictions_S4b.json (criterion D-22, fixed 2026-09-24 before submission). Everything in it not named here stays as written.",
+ "fixed_at": "2026-09-24T15:46:39+03:00 (2026-09-24T12:46:39Z)",
+ "decided_by": "the author, 2026-09-24, on the pre-v10 review (REVIEW_v9_pre_v10_2026-09-24.md, section 2)",
+ "status_at_fixing": "The H14b job was queued or running on Altay. Neither the author nor Claude had read its comparison output (log/fano_S4b_<job>.txt or .json, or the end of log/v4H14b_<job>.out); the author chose the amendment on that condition. No H14b number enters this file.",
+ "inputs_of_the_reasoning": [
+  "archive q per index, fixed in predictions_S4b.json: -0.0342, 0.2129, 0.4084, 0.5006, 0.4601, 0.2946, 0.0546",
+  "the D-22 thresholds: factor >= 3 supports, <= 1.5 refutes",
+  "manuscript registry v9: the absorber suppresses the detrended ln Q oscillation 10.2-fold (0.589 against 0.058 peak to peak)",
+  "H14_S4_diagnosis_2026-09-24.md section 4: at n_a = 1.300 the archive value is too small to carry information",
+  "archive half of the grader run on the deposited spectra on 2026-09-24 (package sha256 a43a29b6...): archive q reproduced to 5e-5, G3 to G5 passed at all seven indices"
+ ],
+ "A1": {
+  "title": "Grade the ratio only where the archive asymmetry is resolved",
+  "reason": "The archive q follows half a Fabry-Perot period across the sweep (q = 0.499 sin(theta), phase advance 0.99 pi, fit rms 0.014), so |q|_archive is 0.034 at 1.300 and 0.055 at 1.450, close to its zero crossings. A support there needs |q|_absorber <= 0.011 and <= 0.018, and at 1.300 any |q|_absorber >= 0.023 grades as a refutation. The absorber leaves up to about a tenth of the end reflection (suppression 10.2), with a phase of its own, so the ratio at these two indices measures that residual and its phase, not the attribution. In a simple model (suppression 10, phase uniform) D-22 passes with probability 0.06 to 0.15 and reports a refutation at 1.300 or 1.450 with probability about 0.7, while the five indices with |q|_archive >= 0.21 support with probability about 1. The model is an estimate, flagged as such.",
+  "graded_indices": ["1.3250", "1.3500", "1.3750", "1.4000", "1.4250"],
+  "reported_not_graded": ["1.3000", "1.4500"],
+  "statistic": "unchanged: factor = |q|_archive / |q|_absorber from the manuscript's Fano routine; >= 3 supports, <= 1.5 refutes, otherwise inconclusive",
+  "gates": "unchanged and required at all seven indices: G1 to G5 on both rows, and S1. A1 changes which indices are graded, nothing else.",
+  "pass": "all seven rows pass every gate, S1 holds, and all five graded indices support",
+  "refuted": "a refutation at any of the five graded indices",
+  "otherwise": "inconclusive at a graded index: not a pass; a gate failure or missing row: incomplete",
+  "at_1.300_and_1.450": "|q|_absorber and the factor are reported with the note 'not graded (A1)'; they enter no verdict",
+  "reporting": "every table and the supplementary give the D-22 grade next to the A1 grade",
+  "branching": "D-23 branches on the A1 verdict"
+ },
+ "A2": {
+  "title": "The cell factor G(n_a) from the absorber spectra (measurement, not a test)",
+  "reason": "v9 section 3.6 states that the quality factor of the 25a cell falls fivefold over the analyte sweep and that part of this fall may belong to the cell, because G was measured at n_a = 1.33 only (v8 review, R1-M5 and B11). H14b gives the absorber-terminated Q at all seven indices.",
+  "admission": "an index counts only if its archive and absorber rows pass G1 to G5 and S1 holds for the set; independent of the Fano grade",
+  "G": "G(n_a) = Q_archive / Q_absorber, both Q = lambda_r / FWHM from the same Fano routine on the same frequency grid; the method offset of the spectral Q against harmonic inversion (+1.2 to +2.2 % in the archive) cancels to first order",
+  "Q_w": "Q_w(n_a) = Q_archive,harminv(n_a) / G(n_a), with the harmonic-inversion Q of the 25a cell used in section 3.6 and Table 5: 8327, 7196, 5778, 4323, 3057, 2138, 1662",
+  "reported": [
+   "G and Q_w at each admitted index",
+   "the fall Q_w(1.300) / Q_w(1.450) against 5.01 in the cell",
+   "consistency value, not a gate: G interpolated to 1.33 from 1.325 and 1.350, against 1.5411 (harmonic-inversion ratio 6927.17 / 4495.09 of the same two terminations; 1.5423 after leak removal)"
+  ],
+  "expectation_not_criterion": "G about 1.64, 1.57, 1.40, 1.14 at 1.300 to 1.375, from the H14 reconstruction (post hoc); it interpolates to 1.535 at 1.33",
+  "use": "v10 replaces the hedge of section 3.6 with the measured values and gives Table 5 the reflectionless quality factor; the text changes are planned and approved before the build and stay within about 8500 words"
+ },
+ "code": "49_H14b_A1A2.py reads the JSON written by 48_fano_karsilastir_S4b.py and prints the D-22 and A1 verdicts side by side and the A2 table; it changes no fit and no gate"
+}

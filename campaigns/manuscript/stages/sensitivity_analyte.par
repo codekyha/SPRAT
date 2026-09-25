@@ -1,0 +1,14 @@
+# The analyte sweep behind the sensitivity: 31 indices from 1.300 to 1.450.
+[run]
+mode = harminv
+tag = sensitivity
+q_est = 8000
+
+[numerics]
+resolution = 24
+
+[harminv]
+t = 17750                   # the explicit signal length of the campaign (margin about 2.5 at Q = 6927)
+
+[sweep]
+analyte.n = 1.300 : 1.450 : 0.005

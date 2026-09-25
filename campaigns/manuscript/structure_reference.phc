@@ -1,0 +1,36 @@
+# The reference geometry of the paper: square lattice of silicon rods in water, W1 guide,
+# point defect of radius 0.060a four rows from the guide, 25a guide terminated by padding + PML.
+# Units: the lattice constant a, unless a key says otherwise.
+
+[lattice]
+type = square
+a_nm = 481.4                # lattice constant for the 1550 nm target (f_mid * 1550 nm); "calibrate" takes it from a bands record
+target_wavelength_nm = 1550
+rod_radius = 0.20
+rod_eps = 11.9025           # silicon, n = 3.45
+background = analyte        # the analyte index comes from the parameter file
+
+[cell]
+guide_periods = 25          # n_x
+cladding_rows = 12          # n_cl per side
+pad_x = 1.5
+pad_y = 1.0
+termination_x = pml         # pml | absorber
+absorber_periods = 8
+
+[waveguide]
+type = W1
+
+[defect]
+type = rod
+radius = 0.060              # r_d
+row = 4                     # N_sep
+dx = 0.000
+dy = 0.000
+
+[rows]
+# 2 = 0.18                  row 2 (counted from the guide, cavity side) gets radius 0.18a
+
+[rods]
+# add 3.0 -2.0 0.20         an extra rod at (x, y) with radius r
+# remove 0.0 4.0            delete the rod at (x, y)

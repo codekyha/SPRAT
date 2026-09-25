@@ -1,0 +1,30 @@
+{
+  "title": "SPRAT: Side-coupled Photonic-crystal Resonator Analysis Toolkit",
+  "upload_type": "software",
+  "description": "<p>Two-dimensional FDTD (Meep), MPB and plane-wave-expansion workflow for a point-defect microcavity side-coupled to a W1 waveguide in a square lattice of dielectric rods immersed in a liquid analyte. The photonic-crystal structure is read from a text file and the run parameters from a second text file; hundreds of independent runs execute in parallel on a workstation; every run writes one self-describing JSON record (English keys). The analysis layer turns the records into the numbers of the accompanying paper (sensitivity, Fano fits, the leak-corrected barrier series and its decay constant, the physical channels of the complex band structure, the analyte energy fraction with the permittivity E_z sees, the comparison of the transmission spectra under the two guide terminations and the cell factor across the analyte sweep, the grading of the criteria fixed before the runs), recomputes the registered numbers of the paper (the numbers registry) from the records and compares them with the deposited data set; the figure scripts draw the figures of the paper from the records.</p><p>The records of the paper's data set were produced on the UHeM Altay cluster by the original scripts of 2026 (02_kavite.py with the v4 patch, Meep 1.30.0) and converted into the SPRAT schema with sprat import-legacy through a documented key map. SPRAT converts and analyses them and can regenerate each record with Meep.</p>",
+  "creators": [
+    {
+      "name": "Oguz, Hasan",
+      "affiliation": "Istanbul Okan University; Pamukkale University",
+      "orcid": "0000-0001-7484-4415"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "photonic crystal",
+    "microcavity",
+    "FDTD",
+    "Meep",
+    "MPB",
+    "plane-wave expansion",
+    "quality factor",
+    "refractive-index sensing",
+    "harmonic inversion",
+    "reproducibility",
+    "adiabatic absorber"
+  ],
+  "notes": "SPRAT 1.2.1 is archived together with the data set it converted and analysed in the Zenodo record https://doi.org/10.5281/zenodo.22912910; this file is not used for that record. Funding of the original computations: Istanbul Okan University BAP OBAP2026010006; Pamukkale University BAP 2025ALDEP037; UHeM grant 5027772026. SPRAT was written by the author with coding assistance from Claude (Anthropic; Claude Opus 5.5 and Claude Fable 5) and Gemini (Google; Gemini 3.6 Flash and Gemini 3.1 Pro), used in tandem under the author's supervision; the author is responsible for its design, its physics and its verification.",
+  "version": "1.2.1"
+}

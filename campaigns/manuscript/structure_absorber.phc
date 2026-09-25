@@ -1,0 +1,21 @@
+# The reference geometry with the guide terminated by an 8a adiabatic absorber instead of padding + PML:
+# the lattice and the guide continue into the absorber, which removes the Fabry-Perot cell factor.
+[lattice]
+a_nm = 481.4
+rod_radius = 0.20
+rod_eps = 11.9025
+
+[cell]
+guide_periods = 25
+cladding_rows = 12
+pad_y = 1.0
+termination_x = absorber
+absorber_periods = 8
+
+[waveguide]
+type = W1
+
+[defect]
+type = rod
+radius = 0.060
+row = 4

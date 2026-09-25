@@ -1,0 +1,14 @@
+# Cavity-less reference runs for the spectra (same cell, same source; the defect is ignored).
+[run]
+mode = reference
+tag = spectra
+q_est = 8000
+
+[numerics]
+resolution = 24
+
+[spectrum]
+nfreq = 601
+
+[sweep]
+analyte.n = 1.300 : 1.450 : 0.025

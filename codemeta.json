@@ -1,0 +1,21 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "SPRAT: Side-coupled Photonic-crystal Resonator Analysis Toolkit",
+  "identifier": "sprat",
+  "version": "1.2.1",
+  "dateCreated": "2026-09-23",
+  "datePublished": "2026-09-23",
+  "dateModified": "2026-09-25",
+  "description": "Two-dimensional FDTD (Meep), MPB and plane-wave-expansion workflow for a point-defect microcavity side-coupled to a W1 waveguide in a square lattice of dielectric rods immersed in a liquid analyte, with a text-file structure and parameter interface, a workstation parallel runner, an English record schema, the analysis layer (including the comparison of the transmission spectra under the two guide terminations) and the figures of the accompanying paper.",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/codekyha/sprat",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.10+",
+  "operatingSystem": ["Linux", "macOS", "Windows (WSL2 for the FDTD modes)"],
+  "softwareRequirements": ["numpy", "scipy", "psutil", "matplotlib (figures)", "pandas (tables)", "pymeep 1.30 (conda-forge; FDTD and MPB modes)"],
+  "keywords": ["photonic crystal", "microcavity", "FDTD", "Meep", "plane-wave expansion", "quality factor", "refractive-index sensing"],
+  "author": [{"@type": "Person", "givenName": "Hasan", "familyName": "Oguz", "@id": "https://orcid.org/0000-0001-7484-4415",
+              "affiliation": {"@type": "Organization", "name": "Istanbul Okan University; Pamukkale University"}}],
+  "funding": "Istanbul Okan University BAP OBAP2026010006; Pamukkale University BAP 2025ALDEP037; UHeM grant 5027772026"
+}

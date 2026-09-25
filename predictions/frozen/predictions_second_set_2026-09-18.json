@@ -1,0 +1,131 @@
+{
+ "spec": "guffd-v4/ek-ongoruler-1.0",
+ "dondurma": "2026-09-18",
+ "kural": "Bu dosya kosumlardan ONCE dondurulur. Sonuc gorulduk ten sonra hicbir olcut degistirilmez; sapma once raporlanir, sonra yorumlanir.",
+ "kaynak": "JPD_v4_improvement_plan_2026-09-18.md, bolum 3 (E1, E2) ve bolum 7",
+ "ongoruler": [
+  {
+   "id": "PA1",
+   "is": "H12",
+   "buyukluk": "kappa(r_d = 0.100a), emici serisi N=3,4,5, sizinti cikarilmis",
+   "beklenen": "[1.64, 1.78]  (PWE kanallari 1.678 / 1.738, +-4 %)",
+   "not": "Makaledeki 1.61 ham PML degeridir; bu olcut onu dogrulamak icin degil, yerine gecmek icin konmustur."
+  },
+  {
+   "id": "PA2",
+   "is": "H12",
+   "buyukluk": "|kappa_emici - kappa_PML| (her ikisi sizinti cikarilmis)",
+   "beklenen": "< 0.02",
+   "not": "G, N'den bagimsizsa PML oraninda tamamen sadelesir."
+  },
+  {
+   "id": "PA3",
+   "is": "H12",
+   "buyukluk": "G(N=4, r_d = 0.100a) = Q_PML / Q_emici",
+   "beklenen": "1.723 +- 0.03",
+   "not": "Arsiv ciftinden: 5041.10 / 2925.85 = 1.7229."
+  },
+  {
+   "id": "PA4",
+   "is": "H12",
+   "buyukluk": "Q(PML, N=4, r_d = 0.100a, nk12, res24)",
+   "beklenen": "5041.1 +- 1 %",
+   "not": "Arsiv kaydinin v4 kodu ile yeniden uretimi (regresyon)."
+  },
+  {
+   "id": "PA5",
+   "is": "H12",
+   "buyukluk": "Q(emici, N=4, r_d = 0.100a, nk12, res24)",
+   "beklenen": "2925.9 +- 1 %",
+   "not": "H9 kaydinin daha uzun t ile yeniden uretimi."
+  },
+  {
+   "id": "PA6",
+   "is": "H12",
+   "buyukluk": "kappa(0.100a) ile kappa(0.060a) = 1.9595 karsilastirmasi",
+   "beklenen": "kappa(0.100a) < kappa(0.060a)",
+   "not": "Bosluk icindeki konuma baglilik; makalenin merkezi iddiasi."
+  },
+  {
+   "id": "PB1",
+   "is": "H13",
+   "buyukluk": "yayilim eta_mask - eta_pure, res 24 -> 48",
+   "beklenen": "en az %30 azalir",
+   "not": "res 24'te 0.0714."
+  },
+  {
+   "id": "PB2",
+   "is": "H13",
+   "buyukluk": "karisik piksel orani",
+   "beklenen": "res 32: 0.074 +- 0.008 ; res 48: 0.049 +- 0.006",
+   "not": "1/res olceklemesi; res 24'te 0.0985."
+  },
+  {
+   "id": "PB3",
+   "is": "H13",
+   "buyukluk": "1/res -> 0 ekstrapolasyonu ile eta_a ve S_th",
+   "beklenen": "eta_a in [0.53, 0.56] ; S_th olculen 646.5'in %3'u icinde",
+   "not": "eta_pure(res 24) = 0.5467 zaten S'i %0.47 ile veriyor."
+  },
+  {
+   "id": "PB4",
+   "is": "H13",
+   "buyukluk": "Q(res 48, N=4) / Q(res 24, N=4) - 1",
+   "beklenen": "|.| < 1 %",
+   "not": "H8 res 32'de N=5 icin -0.23 % vermisti; res24 N=4 degeri 6927.17."
+  },
+  {
+   "id": "PB5",
+   "is": "H13",
+   "buyukluk": "n_a = 1.45 alani, KENDI rezonansinda",
+   "beklenen": "eta_pure(1.45) < eta_pure(1.33)",
+   "not": "Arsivdeki 1.45 alani 1.33 rezonansinda kosuldugu icin gecersizdi."
+  }
+ ],
+ "grading": [
+  {
+   "id": "PA1",
+   "quantity": "kappa(0.100a), absorber, leak-removed",
+   "measured": "1.7386",
+   "registered": "[1.64, 1.78]",
+   "verdict": "PASS"
+  },
+  {
+   "id": "PA2",
+   "quantity": "|kappa_abs - kappa_PML|",
+   "measured": "0.0221",
+   "registered": "< 0.02",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "PA3",
+   "quantity": "G(N=4, r_d = 0.100a)",
+   "measured": "1.7242",
+   "registered": "1.723 +- 0.03",
+   "verdict": "PASS"
+  },
+  {
+   "id": "PA4",
+   "quantity": "Q(PML, N=4)",
+   "measured": "5040.94",
+   "registered": "5041.1 +- 1 %",
+   "verdict": "PASS"
+  },
+  {
+   "id": "PA5",
+   "quantity": "Q(absorber, N=4)",
+   "measured": "2925.71",
+   "registered": "2925.9 +- 1 %",
+   "verdict": "PASS"
+  },
+  {
+   "id": "PA6",
+   "quantity": "kappa(0.100a) < kappa(0.060a)",
+   "measured": "1.7386 < 1.9595",
+   "registered": "true",
+   "verdict": "PASS"
+  }
+ ],
+ "grading_note": "Graded on 2026-09-20 from the runs of 2026-09-19. The criteria were frozen on 2026-09-18 and were not edited after the results were seen. PA2 is a deviation and is reported as one: the two terminations give barrier decay constants 0.0221 apart against a registered ceiling of 0.02. The gap is accounted for by the cell factor varying with the number of separating rows, which the criterion had assumed constant: the logarithmic change of that factor per row is -0.0409 between the third and fourth rows and -0.0032 between the fourth and fifth, and half their difference reproduces the observed gap. The absorber value carries no such term and is the one reported.",
+ "PB_closure": "The PB criteria were written for a resolution study of the analyte filling fraction. They were closed without it. A rigorous lower bound taken from the stored field at the reference resolution gives a filling fraction of 0.547 and a sensitivity of 649.6 nm per refractive-index unit against the 646.5 measured, an excess of 0.48 per cent; at an analyte index of 1.45 the same bound gives 584.0 against 576.8, an excess of 1.25 per cent. Since the bound already lies within one per cent of the measurement from below, a finer grid could only tighten an interval that is already closed, and the runs were not submitted."
+}

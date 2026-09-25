@@ -1,0 +1,16 @@
+# Transmission spectra at seven analyte indices; run spectra_reference.par as well for the normalisation.
+[run]
+mode = spectrum
+tag = spectra
+q_est = 8000
+
+[numerics]
+resolution = 24
+
+[spectrum]
+nfreq = 601
+dft_tol = 1e-6
+t_max = 4e4
+
+[sweep]
+analyte.n = 1.300 : 1.450 : 0.025

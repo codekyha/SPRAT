@@ -1,0 +1,50 @@
+{
+ "description": "English transcription of the first two sets of criteria fixed before the runs (2026-09-16 to 2026-09-18). The originals (Turkish keys) are kept byte for byte under predictions/frozen/ and their SHA-256 values are listed here; tests/test_predictions.py checks that every expected value below equals the value in the frozen file. The grader (sprat.analysis.predictions) reads this file. The third set, for the transmission spectra with the guide continued into the absorber (2026-09-24, with its amendment), is graded by sprat.analysis.termination; tests/test_termination.py checks its constants against the two frozen files.",
+ "sets": {
+  "first": {
+   "frozen_file": "predictions/frozen/predictions_preregistered_2026-09-17.json",
+   "sha256": "f98a18600777f7e3cc569aa410fc2a16acf09a5f71a4a1a0cae4bbc67c653b33",
+   "frozen_on": "2026-09-17",
+   "note": "P1 to P11 were frozen on 2026-09-16 before any run; P12 and P13 on 2026-09-16, from a working document of the author that the frozen file names; H8 and H10 recorded on 2026-09-17 before the first verification run. Nothing was edited after the results were seen.",
+   "archive_constants": {"Q3_cl12": 987.27, "Q4_cl12": 6926.72, "Q5_cl12_margin1.27": 46028.61, "kappa_paper": 1.8901, "kappa_error": 0.0192,
+                         "Q_peak_rd0.065": 6949, "Q_trough_rd0.085": 2037, "Q_rd0.050": 5569, "Q_rd0.105": 5399, "f_ref": 0.30461, "f_cen": 0.3105806451612903}
+  },
+  "second": {
+   "frozen_file": "predictions/frozen/predictions_second_set_2026-09-18.json",
+   "sha256": "a9e2bc53cd0c8d53979ec3e7f6293cce82257875783087131cba3bcaa9fd8633",
+   "sealed_copy": "predictions/frozen/predictions_ek_2026-09-18_sealed.json",
+   "sealed_sha256": "2d1395be8f90266952c6c17ac72cbc4e56d28c75244ab964458d35c8212cbd55",
+   "frozen_on": "2026-09-18",
+   "note": "Criteria PA1 to PA6 for the second-radius runs and PB1 to PB5 for a resolution study of the filling fraction; the PB criteria were closed by the two-sided bound of the stored field instead of the study (see the frozen file, PB_closure)."
+  }
+ },
+ "criteria": [
+  {"id": "P1", "set": "first", "requires_runs": false, "quantity": "kappa_pred at f_ref (slowest pair / zone edge)", "expected": [1.901, 1.961], "tolerance_rel": 0.01, "note": "plane-wave layer; reproduces within 1 %"},
+  {"id": "P2", "set": "first", "requires_runs": false, "quantity": "kappa_pred at f = 0.2923 (slowest pair / zone edge)", "expected": [1.678, 1.738], "tolerance_rel": 0.01, "note": "plane-wave layer"},
+  {"id": "P3", "set": "first", "requires_runs": true, "quantity": "Q6 / Q5 at r_d = 0.060a", "expected": [6.7, 7.1], "note": "exp(kappa_pred) of the two channels; Q6 = 3.08e5 to 3.27e5 if Q5 = 46 029"},
+  {"id": "P4", "set": "first", "requires_runs": true, "quantity": "Q at N_sep = 5, n_cl = 12, margin >= 4", "expected": [45600, 49700], "note": "channel discrimination at n_cl = 12 is confounded by the clearance-7 leak (see P13)"},
+  {"id": "P4b", "set": "first", "requires_runs": true, "quantity": "Q at N_sep = 4, margin >= 4", "expected": 6927, "tolerance_rel": 0.01},
+  {"id": "P5", "set": "first", "requires_runs": false, "quantity": "n_g of the W1 band at f_ref; mean over [0.2898, 0.3034]", "expected": [2.81, 3.06], "tolerance_abs": 0.08, "note": "plane-wave layer, confirmed by MPB"},
+  {"id": "P6", "set": "first", "requires_runs": true, "quantity": "Q(r_d) oscillation period with a 49a guide: delta_f between the two peaks", "expected": 0.0067, "tolerance_rel": 0.1},
+  {"id": "P7", "set": "first", "requires_runs": true, "quantity": "absorber-terminated guide: peak/trough ratio of Q(r_d); change of kappa", "expected": {"peak_trough_max": 1.5, "kappa_change_max": 0.02}},
+  {"id": "P8", "set": "first", "requires_runs": false, "quantity": "unmixed eta_a and S_th", "expected": {"eta_a": [0.52, 0.57], "S_th_nm_per_RIU": 646.5, "tolerance_rel": 0.04}, "note": "post-processing of the stored field (linear unmixing)"},
+  {"id": "P9", "set": "first", "requires_runs": true, "quantity": "PML 2a against 1a", "expected": {"N4_max_rel": 0.01, "N5_max_rel": 0.03}},
+  {"id": "P10", "set": "first", "requires_runs": true, "quantity": "Q ratio when the radius of row 2 is r_b (N_sep = 4)", "expected": {"0.18": [0.751, 0.783], "0.19": [0.883, 0.902], "0.21": [1.071, 1.095], "0.22": [1.108, 1.161]}, "tolerance_ln_rel": 0.3},
+  {"id": "P11", "set": "first", "requires_runs": false, "quantity": "mode-centroid shift per rod displacement", "expected": 0.27, "tolerance_abs": 0.1, "note": "optional H7, not run"},
+  {"id": "P12", "set": "first", "requires_runs": true, "quantity": "absorber-terminated Q at r_d = 0.060a, N_sep = 4", "expected": [2800, 4500], "model_range": "Q_0 = 0.45 to 0.54 of 6927", "note": "Fabry-Perot reading; a value near 6900 falsifies the reading"},
+  {"id": "P13", "set": "first", "requires_runs": true, "quantity": "Q at N_sep = 5, n_cl = 13, margin >= 4", "expected": [47000, 50500], "note": "clearance-7 leak estimate 4 to 9 % (kappa_top = 1.53 per row); corrected step 4->5 = 1.95"},
+  {"id": "H8", "set": "first", "requires_runs": true, "quantity": "resolution 32 against 24 at N_sep = 5", "expected": {"max_rel": 0.03}, "note": "a numerical check, not a prediction of the physics"},
+  {"id": "H10", "set": "first", "requires_runs": true, "quantity": "absorber + n_cl = 13 at N_sep = 5 (derived from P12 x exp(kappa))", "expected": [18500, 32000], "note": "derived; the cleanest kappa point"},
+  {"id": "PA1", "set": "second", "requires_runs": true, "quantity": "kappa(r_d = 0.100a), absorber series N = 3, 4, 5, leak removed", "expected": [1.64, 1.78], "note": "plane-wave channels 1.678 / 1.738, +-4 %; the 1.61 of the paper is a raw PML value that this criterion replaces"},
+  {"id": "PA2", "set": "second", "requires_runs": true, "quantity": "|kappa_absorber - kappa_PML| (both leak removed)", "expected": {"max": 0.02}, "note": "G cancels in the PML ratio only if it does not depend on N"},
+  {"id": "PA3", "set": "second", "requires_runs": true, "quantity": "G(N = 4, r_d = 0.100a) = Q_PML / Q_absorber", "expected": 1.723, "tolerance_abs": 0.03, "note": "from the archive pair 5041.10 / 2925.85 = 1.7229"},
+  {"id": "PA4", "set": "second", "requires_runs": true, "quantity": "Q(PML, N = 4, r_d = 0.100a, n_cl 12, res 24)", "expected": 5041.1, "tolerance_rel": 0.01, "note": "regression of the archive record with the v4 code"},
+  {"id": "PA5", "set": "second", "requires_runs": true, "quantity": "Q(absorber, N = 4, r_d = 0.100a, n_cl 12, res 24)", "expected": 2925.9, "tolerance_rel": 0.01, "note": "the H9 record rerun with a longer signal"},
+  {"id": "PA6", "set": "second", "requires_runs": true, "quantity": "kappa(0.100a) < kappa(0.060a) = 1.9595", "expected": {"less_than": 1.9595}},
+  {"id": "PB1", "set": "second", "requires_runs": false, "quantity": "spread eta_mask - eta_pure, res 24 -> 48", "expected": "decreases by at least 30 %", "closed": true},
+  {"id": "PB2", "set": "second", "requires_runs": false, "quantity": "mixed-pixel fraction", "expected": "res 32: 0.074 +- 0.008; res 48: 0.049 +- 0.006", "closed": true},
+  {"id": "PB3", "set": "second", "requires_runs": false, "quantity": "eta_a and S_th extrapolated to 1/res -> 0", "expected": "eta_a in [0.53, 0.56]; S_th within 3 % of the measured 646.5", "closed": true},
+  {"id": "PB4", "set": "second", "requires_runs": false, "quantity": "Q(res 48, N = 4) / Q(res 24, N = 4) - 1", "expected": "|.| < 1 %", "closed": true},
+  {"id": "PB5", "set": "second", "requires_runs": false, "quantity": "eta_pure at n_a = 1.45 (own resonance) against 1.33", "expected": "eta_pure(1.45) < eta_pure(1.33)", "closed": true}
+ ]
+}

@@ -1,0 +1,38 @@
+name: regression
+
+# Started by hand: Actions > regression > Run workflow.
+# Installs Meep 1.30 with micromamba from environment.yml and runs the environment check and the
+# reference regression (`sprat selftest --reference`: the smoke test at resolution 8, then the
+# reference record, Q = 6926.72 and f_r = 0.304614 within 1e-3 and 1e-5; the reference run takes about
+# 11 minutes on one core at the throughput of the 2026 cluster, longer on a hosted runner).
+on:
+  workflow_dispatch:
+
+jobs:
+  meep-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: environment.yml
+          cache-environment: true
+      - name: Install SPRAT
+        shell: bash -l {0}
+        run: |
+          pip install -e .
+          python -c "import meep; print('meep', meep.__version__)"
+      - name: Environment check
+        shell: bash -l {0}
+        run: sprat check
+      - name: Reference regression
+        shell: bash -l {0}
+        run: sprat selftest --reference --records selftest_records
+      - name: Keep the records of the run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: selftest-records
+          path: selftest_records/
+          if-no-files-found: ignore

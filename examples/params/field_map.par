@@ -1,0 +1,12 @@
+# DFT field map at the resonance of the reference point (f_res from the matching harminv record).
+[run]
+mode = field
+tag = field
+q_est = 6927
+
+[numerics]
+resolution = 24
+
+[field]
+f_res = 0.304614
+t_max = 2e4

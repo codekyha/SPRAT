@@ -1,0 +1,93 @@
+{
+ "id": "H14b",
+ "fixed": "2026-09-24, before submission; the operational reading of the criterion was chosen by the author",
+ "replaces": "H14 (jobs 527443, 527444, 528187, 528188): void as a test. The kit left a_nm, fcen, df and q_tahmin at the code defaults (510, 0.329032, 0.06, 2000); the spectra were truncated at t = 1937 to 1949 and the resonances at n_a >= 1.400 lay outside the window. Diagnosis: H14_S4_diagnosis_2026-09-24.md",
+ "question": "Does the residual Fano asymmetry of the 25a-cell spectra (|q| = 0.034 to 0.501) come from the reflections at the finite guide ends?",
+ "protocol": {
+  "rule": "every run parameter equal to the archive record of the same index; only --sonlandirma emici --emici_kalinlik 8 and the label differ; enforced key by key before the run (31_uret_gorevler_S4b.py) and again on the output (G1)",
+  "common": {
+   "a_nm": 481.4,
+   "df": 0.0036,
+   "nfreq": 601,
+   "dft_tol": 1e-06,
+   "t_max_spektrum": 32000.0,
+   "res": 24,
+   "nkaplama": 12,
+   "nx": 25,
+   "nsep": 4,
+   "rd": 0.06,
+   "dx": 0.0,
+   "dy": 0.0,
+   "r": 0.2,
+   "pad": 1.5,
+   "ypad": 1.0,
+   "dpml": 1.0,
+   "simetri": "oto"
+  },
+  "per_index": {
+   "1.3000": {
+    "fcen": 0.3084414433,
+    "q_tahmin_cavity": 8327.0
+   },
+   "1.3250": {
+    "fcen": 0.3052396121,
+    "q_tahmin_cavity": 7196.0
+   },
+   "1.3500": {
+    "fcen": 0.3021605002,
+    "q_tahmin_cavity": 5778.0
+   },
+   "1.3750": {
+    "fcen": 0.299201107,
+    "q_tahmin_cavity": 4323.0
+   },
+   "1.4000": {
+    "fcen": 0.2963600009,
+    "q_tahmin_cavity": 3057.0
+   },
+   "1.4250": {
+    "fcen": 0.293639542,
+    "q_tahmin_cavity": 2138.0
+   },
+   "1.4500": {
+    "fcen": 0.2910449686,
+    "q_tahmin_cavity": 1662.0
+   }
+  },
+  "q_tahmin_reference": 200.0,
+  "label_suffix": "_em8b"
+ },
+ "archive_q": {
+  "1.3000": -0.0342,
+  "1.3250": 0.2129,
+  "1.3500": 0.4084,
+  "1.3750": 0.5006,
+  "1.4000": 0.4601,
+  "1.4250": 0.2946,
+  "1.4500": 0.0546
+ },
+ "criterion": {
+  "statistic": "factor = |q|_archive / |q|_absorber at each index, both fitted with the manuscript's Fano routine",
+  "supports": "factor >= 3",
+  "refutes": "factor <= 1.5 (the asymmetry has another source at that index)",
+  "otherwise": "inconclusive at that index",
+  "pass": "supports at all seven indices, every gate passed, S1 satisfied",
+  "origin": "README_S4.md: 'a factor well above unity at every index confirms ...; a factor near unity at any index means the asymmetry has another source there'; the numbers are the author's reading, fixed here"
+ },
+ "gates": {
+  "G1": "parameters equal the archive record key by key apart from the label and the termination keys",
+  "G2": "identical frequency grids, relative tolerance 1e-12 (archive and H14b, cavity and reference runs)",
+  "G3": "fitted resonance at least 5 linewidths inside both window edges",
+  "G4": "fit rms <= 0.05, lambda_r inside the window, 0 < FWHM < window/5",
+  "G5": "t_end / tau >= 3 with tau = Q/(pi f_r); the archive spectra have 3.48 to 5.54",
+  "S1": "absorber Q interpolated to n_a = 1.33 within 5 % of 4495.1 (harmonic inversion, same absorber cell, H4b)",
+  "rule": "a row that fails a gate is reported as failed and not graded"
+ },
+ "expectations_not_criteria": {
+  "factor": "about 9: first order in the end reflection, like the suppression of the ln Q oscillation by the absorber (8.6 after detrending, supplementary P7). Flagged: an estimate, not a criterion",
+  "absorber_Q": "about 5090, 4580, 4140, 3780 at n_a = 1.300 to 1.375 (reconstructed from the truncated H14 spectra; post hoc)",
+  "absorber_q_floor": "about 1e-4 on the archive grid for a symmetric resonance (fit of a noiseless Lorentzian)",
+  "T_max_near_resonance": "close to 1 with the absorber; the archive reaches 1.25 from the Fabry-Perot standing wave",
+  "cost": "references about 20 min; spectra 2 to 3 h, at most about 4 h (t_max 32000 at about 7e7 pixel-steps per second with 14 concurrent tasks); one exclusive node"
+ }
+}

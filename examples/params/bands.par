@@ -1,0 +1,12 @@
+# MPB: bulk TM/TE bands, the gap and the lattice-constant calibration (task = bulk); the gap against the
+# analyte index (task = sweep); the W1 projection (task = w1). Run the three by sweeping bands.task.
+[run]
+mode = bands
+tag = bands
+
+[bands]
+resolution = 32
+k_points = 24
+
+[sweep]
+bands.task = bulk, sweep, w1

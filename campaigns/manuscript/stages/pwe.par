@@ -1,0 +1,12 @@
+# The plane-wave layer: bulk gap, W1 band, complex band structure and the channels, Fabry-Perot reading,
+# barrier-row radius, loss budget. quick = true takes about one minute; the full run a few minutes.
+[run]
+mode = pwe
+tag = pwe
+
+[pwe]
+quick = false
+reference_f = 0.30461
+second_f = 0.29230
+kappa_reference = 1.9595      # measured, reflectionless and leak-free (for the deviation column)
+kappa_second = 1.7386

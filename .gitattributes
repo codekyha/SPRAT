@@ -1,0 +1,17 @@
+# Line endings: LF in the repository and in every checkout, whatever the platform's core.autocrlf.
+# The tests compare SHA-256 checksums of files, so a CRLF conversion on a Windows checkout would fail them.
+* text=auto eol=lf
+
+# Never converted: byte-for-byte originals and data tables
+predictions/frozen/** -text
+campaigns/manuscript/expected/** -text
+tests/fixtures/** -text
+*.csv -text
+*.jsonl -text
+
+# Binary
+*.png binary
+*.pdf binary
+*.npz binary
+*.gz binary
+*.zip binary

@@ -1,0 +1,20 @@
+# The verification series of the barrier analysis: N_sep = 3..6 with clearance-matched cladding, both terminations.
+# Run once with structure = examples/structures/reference_w1_notch.phc and once with absorber_terminated.phc;
+# the record labels differ by the termination, so both sets live in the same records directory.
+[run]
+mode = harminv
+tag = verification
+q_est = 48900
+
+[numerics]
+resolution = 24
+
+[harminv]
+t = auto
+margin = 4.5
+
+[sweep]
+structure.defect.row = 3, 4, 5, 6
+structure.cell.cladding_rows = 12, 12, 13, 14
+run.q_est = 987, 6927, 48900, 330000
+zip = structure.defect.row, structure.cell.cladding_rows, run.q_est

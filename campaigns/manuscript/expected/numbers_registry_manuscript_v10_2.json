@@ -1,0 +1,2579 @@
+{
+ "spec": "guffd-v4/numbers-registry-1.0",
+ "created": "2026-09-19; v7 additions 2026-09-23; v9 2026-09-24; v10 2026-09-24; v10.2 2026-09-25",
+ "rule": "No number enters the manuscript without a row here. Measured rows carry etiket, is_no and kod_sha256; derived rows carry the derivation. Recompute with numbers_registry_v4.py. Version 9: rows recomputed with SPRAT 1.1.0 (sections corrected_v9, superseded_v9). Version 10: rows recomputed with SPRAT 1.2.0 (sections termination and corrected_v10). Version 10.2: rows recomputed with SPRAT 1.2.1 (section derived_v10_2).",
+ "provenance": {
+  "tarball": "guffd_v4_sonuclar_2026-09-18_0346.tar.gz",
+  "tarball_sha256": "49951b61a63cd400ff6a3d98e5d719fb640215998b52fac47d0eb01b1108e147",
+  "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+  "records": 64
+ },
+ "measured": [
+  {
+   "quantity": "Q, N_sep = 4, PML, n_cl = 12 (clearance 8)",
+   "value": 6927.17,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H1a_s4_rd0.0600_nk12_res24_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3046141,
+   "margin": 4.51,
+   "note": "reference geometry, 25a cell"
+  },
+  {
+   "quantity": "Q, N_sep = 5, PML, n_cl = 13 (clearance 8)",
+   "value": 48468.16,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H1c_s5_rd0.0600_nk13_res24_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045724,
+   "margin": 4.54,
+   "note": "clearance-matched to N=4 and N=6"
+  },
+  {
+   "quantity": "Q, N_sep = 5, PML, n_cl = 12 (clearance 7)",
+   "value": 46029.94,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H1b_s5_rd0.0600_nk12_res24_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045724,
+   "margin": 4.78,
+   "note": "carries the clearance-7 leak; the v3 series point"
+  },
+  {
+   "quantity": "Q, N_sep = 6, PML, n_cl = 14 (clearance 8)",
+   "value": 313303.94,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H2_s6_rd0.0600_nk14_res24_pay4.5",
+   "is_no": "524775",
+   "dugum": "a039",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045623,
+   "margin": 4.74,
+   "note": "13.63 h wall"
+  },
+  {
+   "quantity": "Q, N_sep = 3, absorber 8a, n_cl = 12 (clearance 9)",
+   "value": 634.03,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H4b_s3_rd0.0600_nk12_res24_em8_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3048079,
+   "margin": 7.08,
+   "note": "reflectionless"
+  },
+  {
+   "quantity": "Q, N_sep = 4, absorber 8a, n_cl = 12 (clearance 8)",
+   "value": 4495.09,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H4b_s4_rd0.0600_nk12_res24_em8_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3046205,
+   "margin": 6.95,
+   "note": "reflectionless reference"
+  },
+  {
+   "quantity": "Q, N_sep = 5, absorber 8a, n_cl = 13 (clearance 8)",
+   "value": 31600.42,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H10_s5_rd0.0600_nk13_res24_em8_pay4.5",
+   "is_no": "524775",
+   "dugum": "a039",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045732,
+   "margin": 6.97,
+   "note": "reflectionless"
+  },
+  {
+   "quantity": "Q, N_sep = 5, absorber 8a, n_cl = 12 (clearance 7)",
+   "value": 30543.75,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H4b_s5_rd0.0600_nk12_res24_em8_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045733,
+   "margin": 7.21,
+   "note": "gives the leak cross-check"
+  },
+  {
+   "quantity": "Q at the reference point, PML, 49a guide",
+   "value": 3789.51,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H4a_s4_rd0.0600_nk12_res24_nx49_pay2.5",
+   "is_no": "524775",
+   "dugum": "a039",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3046371,
+   "margin": 5.28,
+   "note": "second cell length; G < 1 here"
+  },
+  {
+   "quantity": "Q, N_sep = 5, resolution 32 (H8)",
+   "value": 45923.41,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H8_s5_rd0.0600_nk12_res32_pay4.5",
+   "is_no": "524775",
+   "dugum": "a039",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.304662,
+   "margin": 4.79,
+   "note": "resolution check, -0.23 % against res 24"
+  }
+ ],
+ "derived": [
+  {
+   "quantity": "kappa, barrier decay constant",
+   "value": 1.9595,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "four-point reflectionless leak-free fit, N_sep = 3-6",
+   "note": "Monte Carlo over 0.23 % independent discretisation error per Q plus the 0.11 % G(N=6) bound",
+   "uncertainty": 0.0019
+  },
+  {
+   "quantity": "kappa, three-point PML solve",
+   "value": 1.9593,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "e^kappa = (1/Q4 - 1/Q5)/(1/Q5 - 1/Q6) at clearance 8; independent of G",
+   "note": "G cancels identically provided it is N-independent"
+  },
+  {
+   "quantity": "kappa, absorber-only series",
+   "value": 1.9596,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "mean of the two leak-corrected absorber steps N=3->4->5",
+   "note": "uses no Fabry-Perot correction at all"
+  },
+  {
+   "quantity": "per-row factor e^kappa",
+   "value": 7.096,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "exp of the fitted kappa",
+   "note": "v3 manuscript quoted 6.6"
+  },
+  {
+   "quantity": "A, barrier prefactor",
+   "value": 1.7752,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "intercept of the four-point fit, Q_w = A e^{kappa N}",
+   "note": "prefer quoting Q_w(4) e^{kappa(N-4)} in the text; A is an extrapolation to N = 0"
+  },
+  {
+   "quantity": "Q_top, clearance 8",
+   "value": 3029851,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "three-point solve, exact",
+   "note": "7 % from the Monte Carlo",
+   "uncertainty": 212090
+  },
+  {
+   "quantity": "Q_top, clearance 7",
+   "value": 702773,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "three-point solve plus the n_cl 12/13 pair at N=5",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_top, per cladding row",
+   "value": 1.461,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ln[Q_top(8)/Q_top(7)]",
+   "note": "between the PWE value at k_x = 0 (1.358) and the T11 table estimate (1.53)"
+  },
+  {
+   "quantity": "leak share of 1/Q at clearance 8",
+   "value": [
+    0.23,
+    1.6,
+    10.34
+   ],
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "1/Q_top(8) divided by 1/Q at N_sep = 4, 5, 6",
+   "note": ""
+  },
+  {
+   "quantity": "G, cell Fabry-Perot factor at the reference point",
+   "value": 1.5423,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_PML/Q_absorber after leak removal, N_sep = 4",
+   "note": "N_sep = 5 gives 1.5425 (n_cl 13) and 1.5426 (n_cl 12); flat to 0.02 %"
+  },
+  {
+   "quantity": "G, 49a cell at the reference point",
+   "value": 0.8428,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_PML(49a)/Q_absorber after leak removal",
+   "note": "below unity: the 49a cell suppresses Q"
+  },
+  {
+   "quantity": "spread of the quality factor across the three terminations at the reference point",
+   "value": 1.83,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q(25a cell) / Q(49a cell) at r_d = 0.060a, N_sep = 4, both leak-removed",
+   "note": "6927 against 3790 for the same cavity; the absorber value 4495 lies between them"
+  },
+  {
+   "quantity": "R, W1 end power reflectance",
+   "value": 0.076,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "two-reflector fit to the 12 matched PML/absorber ratios",
+   "note": "",
+   "uncertainty": 0.006,
+   "value_v8": 0.077
+  },
+  {
+   "quantity": "D, effective reflector distance",
+   "value": 12.77,
+   "unit": "a",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": "geometric W1 end at 12.5a",
+   "uncertainty": 0.26,
+   "value_v8": 12.64
+  },
+  {
+   "quantity": "rms of the two-reflector model in ln G",
+   "value": 0.055,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "12 matched pairs",
+   "note": "",
+   "value_v8": 0.056
+  },
+  {
+   "quantity": "absorber scale factor c",
+   "value": 0.978,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "free overall scale in the same fit",
+   "note": "consistent with unity: the absorber reproduces an infinite guide",
+   "uncertainty": 0.024,
+   "value_v8": 0.982
+  },
+  {
+   "quantity": "Q_w, reflectionless leak-free series",
+   "value": {
+    "3": 634.1,
+    "4": 4501.8,
+    "5": 31933.5,
+    "6": 226545.8
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "leak removed from every record, PML records divided by the measured G",
+   "note": ""
+  },
+  {
+   "quantity": "per-row steps of the series",
+   "value": [
+    1.9601,
+    1.9592,
+    1.9593
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ln(Q_{N+1}/Q_N) of the four-point series",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_pred, zone-edge channel",
+   "value": "1.9620",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "2 Im k_y a of the slowest physical channel (Re k_y = pi/a) at the guided-mode wavevector, plane-wave cut-off 10",
+   "note": "deviation of the measurement: -0.128 %",
+   "value_v8": 1.9607
+  },
+  {
+   "quantity": "clearance rule",
+   "value": "c >= 8 + ln(100 Q_w / Q_top(8)) / kappa_top",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "require Q_top(c) >= 100 Q_w",
+   "note": "gives c = 7, 8, 9, 10 for Q_w = 4502, 12000, 31934, 226546; supersedes the fixed rule n_cl - N_sep >= 6"
+  },
+  {
+   "quantity": "FOM at the reference point, lossless 2D",
+   "value": 1842,
+   "unit": "1/RIU",
+   "kind": "derived",
+   "derivation": "S Q_w / lambda_r",
+   "note": "the v3 value 2834 used the 25a cell Q = 6927"
+  },
+  {
+   "quantity": "FOM at the reference point, in water",
+   "value": 1235,
+   "unit": "1/RIU",
+   "kind": "derived",
+   "derivation": "S Q_tot / lambda_r with 1/Q_tot = 1/Q_w + 1/Q_abs",
+   "note": "",
+   "value_v8": 1234
+  },
+  {
+   "quantity": "FOM at N_sep = 5, in water",
+   "value": 2916,
+   "unit": "1/RIU",
+   "kind": "derived",
+   "derivation": "same",
+   "note": "",
+   "value_v8": 2905
+  },
+  {
+   "quantity": "detection-limit factor against the v3 headline",
+   "value": 1.539,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "6927.27 / Q_w(4)",
+   "note": ""
+  },
+  {
+   "quantity": "Q_abs in water",
+   "value": 9175,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "lambda_r / (2 k_water S) = n_a / (2 k_water eta_a) with eta_a = n_a S / lambda_r = 0.5441",
+   "note": "",
+   "value_v8": 9132
+  },
+  {
+   "quantity": "Q_tot in water",
+   "value": {
+    "N4": 3020,
+    "N5": 7127
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "1/Q_tot = 1/Q_w + 1/Q_abs",
+   "note": "",
+   "value_v8": {
+    "N4": 3015,
+    "N5": 7101
+   }
+  },
+  {
+   "quantity": "T_min in water",
+   "value": {
+    "N4": "0.108",
+    "N5": "0.603"
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "(Q_tot/Q_abs)^2",
+   "note": "",
+   "value_v8": {
+    "N4": 0.109,
+    "N5": 0.605
+   }
+  },
+  {
+   "quantity": "coupling metric fraction",
+   "value": {
+    "N4": "0.763",
+    "N5": "0.800"
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "M(x)/M(x_opt) with x = Q_w/Q_abs, x_opt = (1+sqrt 3)/2",
+   "note": "",
+   "value_v8": {
+    "N4": 0.764,
+    "N5": 0.799
+   }
+  },
+  {
+   "quantity": "Q_w at the coupling optimum",
+   "value": 12533,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "x_opt Q_abs",
+   "note": "",
+   "value_v8": 12474
+  },
+  {
+   "quantity": "d lambda_r / d N_sep at the operating point",
+   "value": 0.216,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "lambda_r(N=5) - lambda_r(N=4) at r_d = 0.060a",
+   "note": "the shifts decay geometrically: 1.005, 0.216, 0.052 nm for 3->4, 4->5, 5->6"
+  },
+  {
+   "quantity": "dQ/dr_d at the reference point, reflectionless",
+   "value": -120.2,
+   "unit": "1/nm",
+   "kind": "derived",
+   "derivation": "central difference of the absorber sweep over r_d = 0.055-0.065a",
+   "note": "NEGATIVE; the v3 manuscript quotes +120 1/nm from the 25a cell"
+  },
+  {
+   "quantity": "dQ/dr_d at the reference point, 25a cell",
+   "value": 120.4,
+   "unit": "1/nm",
+   "kind": "derived",
+   "derivation": "same on the PML sweep",
+   "note": "the sign is a cell artefact: d lnG/dr_d = +21.6 per a overturns the intrinsic -12.9 per a"
+  },
+  {
+   "quantity": "cross-term, reflectionless",
+   "value": 0.116,
+   "unit": "% of a row step",
+   "kind": "derived",
+   "derivation": "restoring lambda_r after one row costs d_r_d = 0.0853 nm; the resulting dQ as a fraction of a row step",
+   "note": "maximum over the whole sweep: 0.16 %; the feasibility note quoted 0.6 % typical and 4 % at the steepest flank",
+   "derivation_v9": "restoring lambda_r after one row costs d_r_d = 0.0852 nm; the resulting dQ as a fraction of a row step"
+  },
+  {
+   "quantity": "leak-corrected per-row step of the n_cl = 8 series, radius by radius",
+   "value": [
+    1.901,
+    2.018,
+    1.987,
+    1.873,
+    1.784,
+    1.817
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ln(Q4/Q3) after subtracting 1/Q_top(c) at clearances 5 and 4, for r_d = 0, 0.02, 0.04, 0.06, 0.08, 0.1",
+   "note": "",
+   "value_v8": [
+    1.901,
+    2.018,
+    1.987,
+    1.873,
+    1.784,
+    1.817,
+    1.917
+   ]
+  },
+  {
+   "quantity": "mean per-row step of the n_cl = 8 series, raw",
+   "value": 1.518,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "mean of ln(Q4/Q3) over the defect radii of table 1",
+   "note": "",
+   "uncertainty": 0.061,
+   "value_v8": 1.551
+  },
+  {
+   "quantity": "mean per-row step of the n_cl = 8 series, leak removed",
+   "value": 1.897,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same, after subtracting 1/Q_top(c) with the measured leak law",
+   "note": "",
+   "uncertainty": 0.038,
+   "value_v8": 1.9
+  },
+  {
+   "quantity": "fabrication tolerance, reflectionless",
+   "value": 2.7,
+   "unit": "% per +-1 nm radius error",
+   "kind": "derived",
+   "derivation": "|dQ/dr_d| x 1 nm / Q_w(N=4) = 120.2 / 4501.8",
+   "note": "the v3 text gives 1.7 %, which is the same slope over the cell value 6927 and of the opposite sign"
+  },
+  {
+   "quantity": "fabrication tolerance, 25a cell",
+   "value": 1.7,
+   "unit": "% per +-1 nm radius error",
+   "kind": "derived",
+   "derivation": "120.4 / 6927.17",
+   "note": "the v3 value, retained in the text as the cell-dependent figure"
+  },
+  {
+   "quantity": "d lnQ_w/dr_d at the reference point, reflectionless",
+   "value": -12.9,
+   "unit": "1/a",
+   "kind": "derived",
+   "derivation": "central difference of ln Q over the absorber sweep, r_d = 0.055 to 0.065a",
+   "note": ""
+  },
+  {
+   "quantity": "d lnG/dr_d at the reference point",
+   "value": 21.6,
+   "unit": "1/a",
+   "kind": "derived",
+   "derivation": "central difference of ln G over the same three radii",
+   "note": "it overturns the intrinsic slope and reverses the sign of dQ/dr_d in the cell"
+  },
+  {
+   "quantity": "suppression of the Q(r_d) oscillation by the absorber",
+   "value": 10.2,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ratio of the detrended peak-to-peak in ln Q, PML 25a cell over absorber",
+   "note": "",
+   "value_v8": 8.6
+  },
+  {
+   "quantity": "leak share of 1/Q at clearance 7, N_sep = 5",
+   "value": 6.55,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "1/Q_top(7) divided by 1/Q at N_sep = 5",
+   "note": "the v3 series point; with the fixed rule n_cl - N_sep >= 6 it was considered converged"
+  },
+  {
+   "quantity": "cross-term, 25a cell",
+   "value": 0.075,
+   "unit": "% of a row step",
+   "kind": "derived",
+   "derivation": "same in the cell",
+   "note": "maximum over the whole sweep: 0.78 %"
+  }
+ ],
+ "second_radius": [
+  {
+   "quantity": "kappa at r_d = 0.100a, absorber series, leak-removed",
+   "value": 1.7386,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "N_sep = 3, 4, 5 at clearances 9, 8, 8; no Fabry-Perot correction enters",
+   "note": "steps 1.7448 and 1.7324; zone-edge channel at the measured f is 1.7275 (+0.64 %), slowest pair 1.6673 (+4.27 %)",
+   "uncertainty": 0.007
+  },
+  {
+   "quantity": "kappa at r_d = 0.100a, PML series, leak-removed",
+   "value": 1.7165,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same records with PML termination",
+   "note": "lower than the absorber value by 0.0221, which equals the drift of G with N"
+  },
+  {
+   "quantity": "mean resonance frequency of the r_d = 0.100a series",
+   "value": 0.2916831,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "mean f_r of the three absorber records",
+   "note": "the complex-band channels were registered at f = 0.2923 and are interpolated to this value"
+  },
+  {
+   "quantity": "G at r_d = 0.100a",
+   "value": {
+    "3": 1.7961,
+    "4": 1.7242,
+    "5": 1.7186
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_PML/Q_absorber after leak removal",
+   "note": "drifts by 4.1 %% between N = 3 and 4 and by 0.3 %% between 4 and 5, tracking the resonance shift"
+  },
+  {
+   "quantity": "resonance frequency pulled by the 25a cell, r_d = 0.100a",
+   "value": [
+    -8.901e-05,
+    -1.458e-05,
+    -2.52e-06
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "f_r(PML) - f_r(absorber) at N_sep = 3, 4, 5",
+   "note": "decays by 1.81 and 1.75 per row, close to kappa at this radius: the pull scales with the rate of coupling to the guide, while G, a ratio of two rates that both scale with it, stays between 1.72 and 1.80; a second signature of the same cell coupling",
+   "note_v8": "decays with N like the quality-factor enhancement; a second signature of the same cell coupling"
+  },
+  {
+   "quantity": "Q(absorber, r_d = 0.085a) repeated at margin 4.5",
+   "value": 3517.41,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "job C; the archive value at margin 1.47 was 3516.32",
+   "note": "deviation +0.031 %%: the margin rule is conservative and the low-margin point was already accurate"
+  }
+ ],
+ "field_map": [
+  {
+   "quantity": "2 Im k_y at k_x = 0, cladding rows 7 to 10",
+   "value": 1.3745,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "complex fit of the Hann-windowed k_x = 0 projection of the stored DFT field, row by row",
+   "note": "plane-wave prediction 1.3582; deviation +1.20 %. Independent of every Q measurement."
+  },
+  {
+   "quantity": "Re k_y at k_x = 0, cladding",
+   "value": 0.9978,
+   "unit": "pi/a",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": "the zone-edge value 1.000 within 0.2 %: the field alternates sign every row"
+  },
+  {
+   "quantity": "per-row cladding decay of the row energy, rows 5 to 11",
+   "value": [
+    2.044,
+    1.759,
+    1.657,
+    1.557,
+    1.481,
+    1.371
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "energy in the band |y - j| < 0.5 of the stored field",
+   "note": "drifts from 2.04 to 1.37 as the fast k_x components are filtered out; the measured kappa_top = 1.461 is the effective value over the rows that carry the leak"
+  },
+  {
+   "quantity": "per-row barrier decay at k_x = beta, rows 3 to 2",
+   "value": 1.8715,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the one barrier step free of guide and cavity near field",
+   "note": "",
+   "value_v8": 1.8713
+  },
+  {
+   "quantity": "2 Im k_y at k_x = 0, cladding, n_a = 1.45",
+   "value": 1.157,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same analysis on the n_a = 1.45 field map",
+   "note": "no plane-wave value computed at this index"
+  },
+  {
+   "quantity": "lambda_r of the n_a = 1.45 field map",
+   "value": 1654.04,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "stored in the map",
+   "note": "table 5 plus dS/dn_a predicts 1654.05 nm at n_a = 1.450; the map is at its own resonance and is valid, contradicting the note in eta_unmix.json"
+  }
+ ],
+ "superseded": [
+  {
+   "v3_value": "kappa = 1.8901 +- 0.0192",
+   "v4_value": "kappa = 1.9595 +- 0.0019",
+   "reason": "log-linear fit to raw PML values in a 25a cell with mixed clearances and a non-asymptotic N_sep = 2 point"
+  },
+  {
+   "v3_value": "per-row factor 6.6",
+   "v4_value": "7.10",
+   "reason": "follows from kappa"
+  },
+  {
+   "v3_value": "Q = 6927 at the reference point",
+   "v4_value": "Q_w = 4502 reflectionless leak-free",
+   "reason": "6927 is the 25a cell value and contains G = 1.5423"
+  },
+  {
+   "v3_value": "FOM = 2834 1/RIU",
+   "v4_value": "1842 lossless 2D, 1235 in water",
+   "reason": "cell-inflated Q, and the water-corrected value was never stated"
+  },
+  {
+   "v3_value": "eta_a = 0.618, a 13.6 % gap",
+   "v4_value": "eta_a >= 0.547, S_th = 649.6 nm/RIU against a measured 646.5 (+0.48 %)",
+   "reason": "the masked estimator counts whole boundary pixels as analyte; version 4 replaced it by the pure-pixel value, then read as a lower bound, which at n_a = 1.45 lay 1.3 % above the measured sensitivity (version 9 corrects the reading, see below)"
+  },
+  {
+   "v3_value": "clearance rule n_cl - N_sep >= 6",
+   "v4_value": "c >= 8 + ln(100 Q_w/Q_top(8))/kappa_top",
+   "reason": "clearance 7 carries 6.55 % of 1/Q at N_sep = 5 and clearance 8 carries 10.34 % at N_sep = 6"
+  },
+  {
+   "v3_value": "dQ/dr_d = +120 1/nm, Q rises on the flank of the peak at 0.0627a",
+   "v4_value": "dQ/dr_d = -120 1/nm, Q falls smoothly",
+   "reason": "the peak and the sign are Fabry-Perot features of the 25a cell"
+  },
+  {
+   "v3_value": "a linear coefficient is not meaningful for Q (section 3.8)",
+   "v4_value": "reflectionless Q(r_d) is smooth; a linear coefficient is meaningful",
+   "reason": "the oscillation that motivated the disclaimer is the cell, suppressed 10.2x by the absorber"
+  },
+  {
+   "v3_value": "kappa = 1.61 at r_d = 0.100a",
+   "v4_value": "1.739 +- 0.007, reflectionless and leak-free",
+   "reason": "the v3 value is a raw PML value in a 25a cell; job A measured it on an absorber series that needs no Fabry-Perot correction, and it matches the zone-edge channel to 0.6 %"
+  }
+ ],
+ "dataset": [
+  {
+   "quantity": "harmonic-inversion records in the deposit",
+   "value": 858,
+   "kind": "counted",
+   "derivation": "rows of records_all.csv",
+   "note": "794 from the systematic runs, 64 from the verification runs"
+  },
+  {
+   "quantity": "records from the systematic runs",
+   "value": 794,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "rows whose source is not a verification run",
+   "note": ""
+  },
+  {
+   "quantity": "records from the verification runs",
+   "value": 64,
+   "kind": "counted",
+   "derivation": "rows with kaynak = v4",
+   "note": "55 up to 2026-09-18, a further 9 on 2026-09-19"
+  },
+  {
+   "quantity": "records admitted by the criterion of section 2.4",
+   "value": 741,
+   "kind": "counted",
+   "derivation": "rows with margin Q_lim/Q >= 1 and gap position between 0.2 and 0.8"
+  },
+  {
+   "quantity": "records failing the margin condition",
+   "value": 17,
+   "kind": "counted",
+   "derivation": "rows with Q > Q_lim",
+   "note": "all in the sweep layer; 15 of them also lie outside the gap window"
+  },
+  {
+   "quantity": "records outside the gap window that clear the margin",
+   "value": 100,
+   "kind": "counted",
+   "derivation": "rows with margin >= 1 and gap position outside 0.2 to 0.8",
+   "note": "all at analyte index 1.33 and at defect radii 0.110a and above, where the mode approaches the band edge"
+  },
+  {
+   "quantity": "records clearing the margin alone",
+   "value": 841,
+   "kind": "counted",
+   "derivation": "rows with Q <= Q_lim"
+  },
+  {
+   "quantity": "transmission spectra",
+   "value": 14,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "spektrum_*.json in spectra.tar.gz of raw_legacy (seven, 25a cell) and in v4_spectra of raw_h14b (seven, the guide continued into the absorber); spectra_records.tar.gz holds all fourteen with their references",
+   "note": "each has the cavity-less reference run norm_*.json of its own termination",
+   "value_v9": 7,
+   "derivation_v9": "spektrum_*.json in spectra.tar.gz"
+  },
+  {
+   "quantity": "discrete-Fourier-transform field maps",
+   "value": 2,
+   "kind": "counted",
+   "derivation": "alan_*.npz in field_maps.tar.gz",
+   "note": "analyte index 1.33 and 1.45"
+  },
+  {
+   "quantity": "band-structure computations",
+   "value": 4,
+   "kind": "counted",
+   "derivation": "bands.tar.gz, excluding the lattice-constant calibration a_nm.json"
+  },
+  {
+   "quantity": "excluded records lying in the reference geometry",
+   "value": 0,
+   "kind": "counted",
+   "derivation": "of the 117 excluded rows, none has rd = 0.060, N_sep = 4, n_cl = 12, res 24, n_a = 1.33, dx = dy = 0"
+  }
+ ],
+ "vertical": [
+  {
+   "quantity": "Q_tot with no vertical channel",
+   "value": "3020",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "1/Q_tot = 1/Q_w + 1/Q_abs at the reference point",
+   "note": "",
+   "value_v8": 3015
+  },
+  {
+   "quantity": "Q_perp leaving Q_tot within 3 per cent",
+   "value": 97600.0,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "1/Q_tot = 1/Q_w + 1/Q_perp + 1/Q_abs solved for a 3 per cent reduction: Q_perp = Q_0 (1 - r) / r",
+   "note": "",
+   "value_v8": 97500.0
+  },
+  {
+   "quantity": "Q_perp costing 10 per cent of Q_tot",
+   "value": 27200.0,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same, for a 10 per cent reduction",
+   "note": "",
+   "value_v8": 27100.0
+  },
+  {
+   "quantity": "Q_perp costing 50 per cent of Q_tot",
+   "value": 3020.0,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same, for a 50 per cent reduction",
+   "note": "",
+   "value_v8": 3020.0
+  },
+  {
+   "quantity": "reduction of Q_tot at Q_perp = 1e4",
+   "value": 23.2,
+   "kind": "derived",
+   "unit": "per cent",
+   "derivation": "Q_0 / (Q_0 + Q_perp): Q_tot falls from 3020 to 2319",
+   "derivation_v9": "Q_tot falls from 3015 to 2317"
+  },
+  {
+   "quantity": "reduction of Q_tot at Q_perp = 1e5",
+   "value": 2.9,
+   "kind": "derived",
+   "unit": "per cent",
+   "derivation": "Q_0 / (Q_0 + Q_perp): Q_tot falls from 3020 to 2931",
+   "derivation_v9": "Q_tot falls from 3015 to 2927"
+  }
+ ],
+ "references_added_v6": [
+  {
+   "key": "johnson1999",
+   "citation": "Johnson S G, Fan S, Villeneuve P R, Joannopoulos J D and Kolodziejski L A 1999 Guided modes in photonic crystal slabs Phys. Rev. B 60 5751-8",
+   "doi": "10.1103/PhysRevB.60.5751",
+   "why": "treats a square lattice of dielectric rods in TM alongside a perforated slab in TE, and shows the rod slab needs a much greater thickness for vertical confinement because its guided mode sees a far lower effective index"
+  }
+ ],
+ "dataset_note": "Counts recomputed from records_all.csv on 2026-09-21, after the runs of 2026-09-19 entered the deposit. They supersede the counts of the submitted data availability statement; DATA_AVAILABILITY.md states the replacement wording.",
+ "barrier_row_v7": [
+  {
+   "quantity": "Q, N_sep = 4, PML 25a cell, second barrier row radius 0.18a",
+   "value": 5663.6,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H5_s4_rd0.0600_nk12_res24_br2-0.18_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3048445,
+   "lambda_r_nm_raw": 1579.17
+  },
+  {
+   "quantity": "Q, N_sep = 4, PML 25a cell, second barrier row radius 0.19a",
+   "value": 6375.6,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H5_s4_rd0.0600_nk12_res24_br2-0.19_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3047176,
+   "lambda_r_nm_raw": 1579.82
+  },
+  {
+   "quantity": "Q, N_sep = 4, PML 25a cell, second barrier row radius 0.21a",
+   "value": 7326.0,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H5_s4_rd0.0600_nk12_res24_br2-0.21_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3045207,
+   "lambda_r_nm_raw": 1580.84
+  },
+  {
+   "quantity": "Q, N_sep = 4, PML 25a cell, second barrier row radius 0.22a",
+   "value": 7568.3,
+   "unit": "",
+   "kind": "measured",
+   "etiket": "v4_H5_s4_rd0.0600_nk12_res24_br2-0.22_pay4.5",
+   "is_no": "524774",
+   "dugum": "a084",
+   "kod_sha256": "4526a05608a7f13eb399c598e2aa5d2ef80b82f7fde9857dbb703e0e578f19e0",
+   "f_r": 0.3044307,
+   "lambda_r_nm_raw": 1581.31
+  },
+  {
+   "quantity": "resonance shift over the barrier-row series 0.18a to 0.22a",
+   "value": 2.147,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "a/f_r at the raw lattice constant a = 481.4 nm, 0.22a minus 0.18a",
+   "note": "quoted as 2.1 nm in section 3.4",
+   "value_v8": 2.146
+  }
+ ],
+ "literature_v7": [
+  {
+   "key": "dorfner2008",
+   "values": {
+    "L3 sensitivity (nm/RIU)": "63 +- 9",
+    "H1-r sensitivity (nm/RIU)": "155 +- 6",
+    "Q in water": "958 (L3), 246 (H1-r)"
+   },
+   "source": "Appl. Phys. Lett. 93 181103, text: 'For the H1-r cavities we obtain a slope of dl/dn = 155 +- 6' and 'For the L3 cavities ... 63 +- 9'",
+   "note": "v6 printed 156 and 64, reading the +- sign as a digit"
+  },
+  {
+   "key": "jokar2023",
+   "values": {
+    "Q": "306.56",
+    "S (nm/RIU)": "610",
+    "DL (RIU)": "7e-3"
+   },
+   "source": "Results Opt. 13 100563"
+  },
+  {
+   "key": "fallahi2024",
+   "values": {
+    "S, text (nm/RIU)": "above 862",
+    "S, abstract (nm/RIU)": "6451",
+    "Q": "2636",
+    "FOM (1/RIU)": "2960",
+    "FWHM (nm)": "0.31"
+   },
+   "source": "Sci. Rep. 14 2001",
+   "note": "FOM/FWHM implies about 920 nm/RIU; the table quotes the text value and states the abstract value in its caption"
+  },
+  {
+   "key": "turduev2017",
+   "values": {
+    "analyte index range": "1.00-1.30"
+   },
+   "source": "Sens. Actuators B 245 765",
+   "note": "v6 table said 'liquid'"
+  },
+  {
+   "key": "johnson1999",
+   "values": {
+    "rod slab gap maximum": "2.3a",
+    "hole slab gap maximum": "0.6a",
+    "effective dielectric constant, rods TM-like": "1.25",
+    "holes TE-like": "5.06"
+   },
+   "source": "Phys. Rev. B 60 5751, section IV, dielectric constant 12 in air"
+  },
+  {
+   "key": "prahl2017",
+   "values": {
+    "alpha at 1540 nm (1/cm)": "11.83",
+    "alpha at 1560 nm (1/cm)": "9.67"
+   },
+   "source": "https://omlc.org/spectra/water/data/hale73.txt (20 nm tabulation of the Hale and Querry curve)",
+   "note": "Hale and Querry's own Table I lists 1.4 and 1.6 um only; the values in the text are unchanged, the attribution is corrected"
+  }
+ ],
+ "absorption_v7": [
+  {
+   "quantity": "Q_abs quoted in section 4",
+   "value": "9.2e3",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "lambda_r / (2 k S) = 2 pi n_a / (eta_a alpha lambda) with eta_a = 0.5441 (required by the measured sensitivity), alpha = 10.80 1/cm, lambda = 1550 nm",
+   "note": "quoted as 9.2e3",
+   "value_v8": "9.1e3"
+  }
+ ],
+ "references_added_v7": [
+  {
+   "key": "oguz2024",
+   "doi": "10.1007/s11082-024-07583-1",
+   "where": "Introduction"
+  },
+  {
+   "key": "istrate2005",
+   "doi": "10.1103/PhysRevB.71.195122",
+   "where": "sections 2.2 and 3.9"
+  },
+  {
+   "key": "oskooi2008",
+   "doi": "10.1364/OE.16.011376",
+   "where": "sections 3.2, 3.3 and 3.9"
+  },
+  {
+   "key": "fan1999",
+   "doi": "10.1103/PhysRevB.59.15882",
+   "where": "section 3.9"
+  },
+  {
+   "key": "prahl2017",
+   "url": "https://omlc.org/spectra/water/data/hale73.txt",
+   "where": "section 4"
+  }
+ ],
+ "references_removed_v7": [
+  "bagci2017",
+  "bagci2015"
+ ],
+ "derived_v7": [
+  {
+   "quantity": "ratio of the transverse-displacement coefficient to the row coefficient",
+   "value": 0.261,
+   "kind": "derived",
+   "derivation": "0.512 / 1.9595",
+   "note": "printed as 0.26; v6 printed 0.27, the ratio to the superseded 1.8901"
+  },
+  {
+   "quantity": "reproduction of the N_sep = 5 point by repeats at higher margin",
+   "value": "0.003 %",
+   "kind": "derived",
+   "derivation": "systematic run 46028.61 (margin 1.27) against 46029.77 (margin 2.54, t120k) and 46029.94 (margin 4.78, v4_H1b)",
+   "note": "largest difference 1.33, i.e. 0.0029 %"
+  },
+  {
+   "quantity": "reproduction of the reference point by a repeat at higher margin",
+   "value": "0.001 %",
+   "kind": "derived",
+   "derivation": "systematic run 6927.27 (margin 2.50) against v4_H1a 6927.17 (margin 4.51)",
+   "note": "difference 0.0014 %"
+  },
+  {
+   "quantity": "change of Q over the barrier-row series",
+   "value": "34 %",
+   "kind": "derived",
+   "derivation": "7568.3 / 5663.6 - 1 = 0.336",
+   "note": "ln ratio 0.2899, i.e. 14.8 % of the row step 1.9595"
+  },
+  {
+   "quantity": "cell-factor change over the barrier-row series (estimate)",
+   "value": "4 %",
+   "kind": "derived",
+   "derivation": "d ln G / d f = 21.6 per a / (df/dr_d = -0.2354) = -91.8; delta f = -4.14e-4 -> +3.8 %",
+   "note": "estimate; G was measured only against the defect radius",
+   "derivation_v9": "d ln G / d f = 21.6 per a / (df/dr_d = -0.2307) = -93.6; delta f = -4.14e-4 -> +3.9 %"
+  },
+  {
+   "quantity": "cell-factor change at |dy| = 0.10a (estimate)",
+   "value": "2 %",
+   "kind": "derived",
+   "derivation": "resonance shift -1.1 nm -> delta f = +2.20e-4; d ln G/df = -91.8 -> -2.0 %",
+   "note": "even in dy",
+   "derivation_v9": "resonance shift -1.1 nm -> delta f = +2.1e-4; d ln G/df = -93.6 -> -2.0 %"
+  },
+  {
+   "quantity": "absorption cap quoted in the abstract",
+   "value": 9200,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_abs = lambda_r / (2 k S), quoted as 'near 9200'",
+   "note": "",
+   "value_v9": 9000,
+   "derivation_v9": "Q_abs = 9132 (eta_a = 0.5467, alpha = 10.8 1/cm), quoted as 'near 9000'"
+  },
+  {
+   "quantity": "coupling optimum",
+   "value": 12533,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "(1 + sqrt 3)/2 x Q_abs",
+   "note": "",
+   "value_v8": 12474
+  },
+  {
+   "quantity": "reflectionless linewidth count for a 1 nm radius error",
+   "value": 7.4,
+   "kind": "derived",
+   "derivation": "2.54 nm / (1550 nm / 4502)",
+   "note": "quoted as 'seven'"
+  }
+ ],
+ "corrected_v8": [
+  {
+   "quantity": "smallest linewidth narrowing by the input-plane normalisation",
+   "value": 1.83,
+   "unit": "",
+   "kind": "derived",
+   "source": "harmonic-inversion linewidth over the Fano linewidth of the input-plane-normalised spectrum, seven spectra"
+  },
+  {
+   "quantity": "largest linewidth narrowing by the input-plane normalisation",
+   "value": 2.86,
+   "unit": "",
+   "kind": "derived",
+   "source": "as above",
+   "replaces": "2.90 in section 2.5 of v7, not reproduced by the records"
+  }
+ ],
+ "corrected_v8_note": "Manuscript version 8 corrects two statements against the records: the largest deviation of the quadratic law over the thirteen-point fine sweep (4.7e-4 to 6.4e-4) and the upper end of the linewidth narrowing by the input-plane normalisation (2.90 to 2.86). Every other section is that of version 7. The reference key prahl2017 of the sections literature_v7 and references_added_v7 is prahl2018 in the manuscript (the OMLC compendium, copyright 2018). Version 9 moves the first of the three rows, the largest deviation of the quadratic law over the thirteen-point fine sweep, to superseded_v9: over the admitted points it is 2.2e-4.",
+ "corrected_v9": [
+  {
+   "quantity": "deviation of the four-point kappa from the zone-edge channel",
+   "value": -0.13,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (kappa / kappa_pred - 1)",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_pred, next physical channel",
+   "value": 6.23,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the slowest physical root after the zone-edge one, at the same f and k_x",
+   "note": "Re k_y = 0.000 pi/a"
+  },
+  {
+   "quantity": "kappa of the slowest truncation artefact of the square plane-wave basis",
+   "value": "1.9020",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "rejected root: eigenvector on the two outermost G_y rings of the basis, no replica with |Re k_y| <= pi/a",
+   "note": "the 'least-evanescent complex pair' of the original plane-wave layer"
+  },
+  {
+   "quantity": "zone-edge channel for four plane-wave bases",
+   "value": {
+    "square M=7": 1.9619,
+    "square M=10": "1.9620",
+    "square M=13": "1.9620",
+    "circle |m|<=16": "1.9620"
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "square cut-offs M = 7, 10, 13 and a circular basis |m| <= 16, at the reference resonance",
+   "note": ""
+  },
+  {
+   "quantity": "slowest truncation artefact for four plane-wave bases",
+   "value": {
+    "square M=7": "1.9020",
+    "square M=10": "1.9020",
+    "square M=13": 1.9021,
+    "circle |m|<=16": 1.5466
+   },
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same bases; the artefact moves with the shape of the basis, the physical root does not",
+   "note": ""
+  },
+  {
+   "quantity": "spread of the zone-edge channel over the four bases",
+   "value": 0.0002,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "largest minus smallest",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_pred, zone-edge channel at the second radius",
+   "value": 1.7288,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the zone-edge channel of the kappa curve at the mean resonance frequency 0.2916831 of the absorber series",
+   "note": ""
+  },
+  {
+   "quantity": "deviation of kappa at r_d = 0.100a from the zone-edge channel",
+   "value": 0.56,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (kappa / kappa_pred - 1)",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_pred at k_x = 0 (cladding channel)",
+   "value": 1.3676,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "physical plane-wave root at the reference resonance",
+   "note": ""
+  },
+  {
+   "quantity": "kappa_pred at k_x = pi/a",
+   "value": 2.5039,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same, at the edge of the zone in k_x",
+   "note": ""
+  },
+  {
+   "quantity": "deviation of the cladding decay of the field map from the k_x = 0 channel",
+   "value": "0.50",
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (2 Im k_y / kappa_pred(k_x = 0) - 1)",
+   "note": ""
+  },
+  {
+   "quantity": "largest relative difference of the gap edges, MPB against the plane-wave layer",
+   "value": 0.084,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "at n_a = 1.33",
+   "note": ""
+  },
+  {
+   "quantity": "measured over predicted ln Q ratio for the barrier-row radius",
+   "value": [
+    0.82,
+    "0.80",
+    0.82,
+    0.87
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ln(Q(r_b)/Q_ref) over the plane-wave prediction of the physical channel, r_b = 0.18, 0.19, 0.21, 0.22",
+   "note": ""
+  },
+  {
+   "quantity": "f_r(r_d) quadratic law, n_cl = 8",
+   "value": [
+    0.31165,
+    0.0008,
+    -1.995
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "polynomial fit to the 6 admitted radii 0 to 0.1a, ascending coefficients; R^2 = 0.9984",
+   "note": ""
+  },
+  {
+   "quantity": "standard errors of the quadratic law",
+   "value": [
+    0.00036,
+    0.017,
+    0.16
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "from the residual variance with n - 3 degrees of freedom",
+   "note": ""
+  },
+  {
+   "quantity": "R^2 of the quadratic law",
+   "value": 0.998,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": ""
+  },
+  {
+   "quantity": "rms residual of the quadratic law",
+   "value": 0.00028,
+   "unit": "a/lambda",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": ""
+  },
+  {
+   "quantity": "R^2 of the linear law",
+   "value": 0.919,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "straight line through the same points",
+   "note": ""
+  },
+  {
+   "quantity": "rms residual of the linear law",
+   "value": "0.0020",
+   "unit": "a/lambda",
+   "kind": "derived",
+   "derivation": "same",
+   "note": ""
+  },
+  {
+   "quantity": "R^2 of the cubic law",
+   "value": 0.999,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "cubic through the same points",
+   "note": ""
+  },
+  {
+   "quantity": "quadratic intercepts of f_r(r_d) for N_sep = 2, 3, 4",
+   "value": [
+    0.3141,
+    0.3119,
+    0.3116
+   ],
+   "unit": "a/lambda",
+   "kind": "derived",
+   "derivation": "quadratic law of each row count, admitted radii",
+   "note": ""
+  },
+  {
+   "quantity": "quadratic curvatures of f_r(r_d) for N_sep = 2, 3, 4",
+   "value": [
+    -2.466,
+    -1.999,
+    -1.995
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same fits",
+   "note": ""
+  },
+  {
+   "quantity": "spread of the quadratic intercepts over N_sep = 2 to 4",
+   "value": 0.8,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (max - min) / min",
+   "note": ""
+  },
+  {
+   "quantity": "mean per-row step ln(Q3/Q2) of the n_cl = 8 series",
+   "value": "1.63",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "mean over the 6 admitted radii",
+   "note": "",
+   "uncertainty": "0.10"
+  },
+  {
+   "quantity": "pooled kappa of the n_cl = 8 series",
+   "value": 1.57,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "log-linear fit of ln Q against N_sep = 2, 3, 4 over the 6 admitted radii",
+   "note": ""
+  },
+  {
+   "quantity": "leak-removed mean of the n_cl = 8 series below the reference kappa",
+   "value": 3.2,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (1 - mean / kappa)",
+   "note": ""
+  },
+  {
+   "quantity": "scatter of the n_cl = 8 steps, raw over leak removed",
+   "value": 1.6,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ratio of the standard deviations",
+   "note": ""
+  },
+  {
+   "quantity": "largest deviation of the quadratic law from the fine sweep in the reference geometry",
+   "value": 0.00022,
+   "unit": "a/lambda",
+   "kind": "derived",
+   "derivation": "law fitted to the admitted radii of the n_cl = 8, resolution 20 sweep, evaluated at the 12 admitted radii of the fine sweep; largest at r_d = 0.050a",
+   "note": ""
+  },
+  {
+   "quantity": "largest deviation of the quadratic law from the fine sweep, in wavelength at 1550 nm",
+   "value": 1.1,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "lambda delta f / f_r at the radius of the largest deviation",
+   "note": ""
+  },
+  {
+   "quantity": "d lambda_r / d r_d at the reference radius, five-point stencil of the fine sweep",
+   "value": 2.54,
+   "unit": "nm/nm",
+   "kind": "derived",
+   "derivation": "step 0.005a, scale invariant",
+   "note": ""
+  },
+  {
+   "quantity": "d lambda_r / d r_d at the reference radius from the quadratic law",
+   "value": 2.57,
+   "unit": "nm/nm",
+   "kind": "derived",
+   "derivation": "law: -F'(r_d) / f_r^2 with F the quadratic law of the n_cl = 8 series",
+   "note": ""
+  },
+  {
+   "quantity": "agreement of the stencil with the quadratic law",
+   "value": -1.35,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (stencil / law - 1)",
+   "note": ""
+  },
+  {
+   "quantity": "detrended peak-to-peak of ln Q over the fine sweep, 25a cell",
+   "value": 0.589,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "cubic trend removed, admitted radii",
+   "note": ""
+  },
+  {
+   "quantity": "detrended peak-to-peak of ln Q over the fine sweep, absorber",
+   "value": 0.058,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same",
+   "note": ""
+  },
+  {
+   "quantity": "fall of Q at dx = 0.08a, dy = 0",
+   "value": 0.39,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (1 - Q(0.08a)/Q(0))",
+   "note": ""
+  },
+  {
+   "quantity": "quadratic coefficient of Q(dx)/Q(0) - 1, dy = 0",
+   "value": -0.63,
+   "unit": "1/a^2",
+   "kind": "derived",
+   "derivation": "least squares through the origin over dx = 0.02a to 0.08a",
+   "note": "largest residual 0.049 %; with a free offset -0.027 % the coefficient is -0.57"
+  },
+  {
+   "quantity": "largest residual of the quadratic law in dx, dy = 0",
+   "value": 0.049,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": ""
+  },
+  {
+   "quantity": "offset of the quadratic law in dx with a free constant, dy = 0",
+   "value": -0.027,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "step between the run at dx = 0 (mirror symmetry exploited) and the displaced runs (none)",
+   "note": ""
+  },
+  {
+   "quantity": "fall of Q at dx = 0.08a, dy = 0.10a",
+   "value": 0.62,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (1 - Q(0.08a)/Q(0))",
+   "note": ""
+  },
+  {
+   "quantity": "quadratic coefficient of Q(dx)/Q(0) - 1, dy = 0.10a",
+   "value": -1.02,
+   "unit": "1/a^2",
+   "kind": "derived",
+   "derivation": "least squares through the origin over dx = 0.02a to 0.08a",
+   "note": "largest residual 0.085 %; with a free offset -0.061 % the coefficient is -0.89"
+  },
+  {
+   "quantity": "largest residual of the quadratic law in dx, dy = 0.10a",
+   "value": 0.085,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "same fit",
+   "note": ""
+  },
+  {
+   "quantity": "offset of the quadratic law in dx with a free constant, dy = 0.10a",
+   "value": -0.061,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "step between the run at dx = 0 (mirror symmetry exploited) and the displaced runs (none)",
+   "note": ""
+  },
+  {
+   "quantity": "frequency step of the transmission spectra",
+   "value": "6.0e-6",
+   "unit": "a/lambda",
+   "kind": "derived",
+   "derivation": "median spacing of the 601 points",
+   "note": ""
+  },
+  {
+   "quantity": "transmission at the samples next to the minimum",
+   "value": [
+    0.0032,
+    0.096
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "smallest and largest over the seven spectra",
+   "note": ""
+  },
+  {
+   "quantity": "smallest transmission sample over the seven spectra",
+   "value": [
+    1.13e-05,
+    0.00269
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the range of the smallest sample of each spectrum",
+   "note": ""
+  },
+  {
+   "quantity": "normalised transmission far from resonance",
+   "value": [
+    0.992,
+    1.005
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "median of T more than fifteen linewidths from resonance; 5 of the 7 spectra extend that far",
+   "note": ""
+  },
+  {
+   "quantity": "largest normalised transmission near resonance",
+   "value": 1.25,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "within fifteen linewidths, over the seven spectra",
+   "note": ""
+  },
+  {
+   "quantity": "T_min expected from the cladding leak at the reference geometry",
+   "value": 5.2e-06,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "(Q_L / Q_i)^2 with Q_i = Q_top(8), the only intrinsic loss of the two-dimensional model",
+   "note": ""
+  },
+  {
+   "quantity": "lattice constant scaled to 1550 nm",
+   "value": 472.2,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "a lambda_t / lambda_r at n_a = 1.33",
+   "note": ""
+  },
+  {
+   "quantity": "rod radius scaled to 1550 nm",
+   "value": 94.4,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "0.20 a",
+   "note": ""
+  },
+  {
+   "quantity": "defect radius of the reference geometry scaled to 1550 nm",
+   "value": 28.3,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "0.060 a",
+   "note": ""
+  },
+  {
+   "quantity": "sensitivity scaled to 1550 nm",
+   "value": 634.1,
+   "unit": "nm/RIU",
+   "kind": "derived",
+   "derivation": "S lambda_t / lambda_r",
+   "note": ""
+  },
+  {
+   "quantity": "linewidth of the 25a cell scaled to 1550 nm",
+   "value": 0.224,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "fwhm lambda_t / lambda_r",
+   "note": ""
+  },
+  {
+   "quantity": "resonance shift over the analyte sweep",
+   "value": 93.3,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "lambda_r(1.450) - lambda_r(1.300) at the raw lattice constant",
+   "note": ""
+  },
+  {
+   "quantity": "eta_a, Hellmann-Feynman estimate consistent with the discretisation",
+   "value": 0.5523,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "sum (1 - f) eps_a |E_z|^2 / sum <eps> |E_z|^2 with <eps> reconstructed on the E_z grid from the geometry",
+   "note": ""
+  },
+  {
+   "quantity": "S_th from the Hellmann-Feynman estimate",
+   "value": 656.3,
+   "unit": "nm/RIU",
+   "kind": "derived",
+   "derivation": "lambda_r eta_a / n_a",
+   "note": "measured S = 646.52 nm/RIU"
+  },
+  {
+   "quantity": "deviation of S_th from the measured sensitivity, Hellmann-Feynman estimate",
+   "value": 1.51,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (S_th / S - 1)",
+   "note": ""
+  },
+  {
+   "quantity": "eta_a, Hellmann-Feynman estimate with the permittivity at the points of the stored field",
+   "value": 0.5498,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same, <eps> and 1 - f evaluated at the centred points instead of averaged from the E_z points",
+   "note": "S_th = 653.3 nm/RIU (+1.05 %)"
+  },
+  {
+   "quantity": "eta_a, pure-analyte points only, consistent permittivity",
+   "value": 0.5176,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "every mixed point counted as silicon",
+   "note": "S_th = 615.1 nm/RIU (-4.87 %)"
+  },
+  {
+   "quantity": "eta_a, mixed points counted as analyte, consistent permittivity",
+   "value": 0.7486,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "pure-analyte points plus the whole energy of the mixed points",
+   "note": "S_th = 889.5 nm/RIU"
+  },
+  {
+   "quantity": "energy fraction at mixed points, consistent permittivity",
+   "value": 0.231,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "points whose E_z neighbours mix the two media",
+   "note": ""
+  },
+  {
+   "quantity": "fraction of the points that are mixed",
+   "value": 0.1094,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "by count",
+   "note": ""
+  },
+  {
+   "quantity": "largest deviation of the reconstructed permittivity map from the stored one",
+   "value": 1e-05,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Meep writes 12 / (sum of the 4-point sums of the diagonal of eps^-1) at the centred points; interior points",
+   "note": "rms 4.6e-07"
+  },
+  {
+   "quantity": "eta_a, pure pixels over the stored-map denominator",
+   "value": 0.5467,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the pure-pixel value of the earlier analysis: the stored map read as <eps>",
+   "note": ""
+  },
+  {
+   "quantity": "S_th from the pure pixels over the stored-map denominator",
+   "value": 649.6,
+   "unit": "nm/RIU",
+   "kind": "derived",
+   "derivation": "lambda_r eta / n_a",
+   "note": "deviation +0.48 %"
+  },
+  {
+   "quantity": "eta_a, linear unmixing of the stored map",
+   "value": 0.5884,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the estimator registered as P8",
+   "note": "S_th = 699.2 nm/RIU"
+  },
+  {
+   "quantity": "eta_a, circle-pixel geometry over the stored-map denominator",
+   "value": 0.5785,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "earlier analysis",
+   "note": "S_th = 687.4 nm/RIU"
+  },
+  {
+   "quantity": "eta_a, threshold mask of the original analysis",
+   "value": 0.6181,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "stored eps below the mean of the two permittivities",
+   "note": "S_th = 734.4 nm/RIU"
+  },
+  {
+   "quantity": "energy fraction in mixed pixels of the stored map",
+   "value": 0.1894,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "boundary pixels with 0.001 < w < 0.999, over the stored-map denominator",
+   "note": ""
+  },
+  {
+   "quantity": "S_th from the Hellmann-Feynman estimate, n_a = 1.45",
+   "value": 601.1,
+   "unit": "nm/RIU",
+   "kind": "derived",
+   "derivation": "same on the second map",
+   "note": ""
+  },
+  {
+   "quantity": "eta_a, Hellmann-Feynman estimate, n_a = 1.45",
+   "value": "0.5270",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same on the second map",
+   "note": ""
+  },
+  {
+   "quantity": "S_th from the pure pixels over the stored-map denominator, n_a = 1.45",
+   "value": 584.0,
+   "unit": "nm/RIU",
+   "kind": "derived",
+   "derivation": "same on the second map",
+   "note": ""
+  },
+  {
+   "quantity": "deviation of S_th from the measured sensitivity at n_a = 1.45, Hellmann-Feynman estimate",
+   "value": 4.22,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "against 576.7 nm/RIU extrapolated from the analyte sweep",
+   "note": ""
+  },
+  {
+   "quantity": "eta_a required by the measured sensitivity",
+   "value": 0.5441,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "n_a S / lambda_r, equation (4)",
+   "note": ""
+  },
+  {
+   "quantity": "reduction of the reflectionless quality factor by water",
+   "value": 32.9,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (1 - Q_tot / Q_w) at N_sep = 4",
+   "note": ""
+  },
+  {
+   "quantity": "Q_abs at the Hellmann-Feynman eta_a of the field map",
+   "value": 9039,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "n_a / (2 k eta_a)",
+   "note": ""
+  },
+  {
+   "quantity": "Q_abs at the stored-map pure-pixel eta_a (the v8 value)",
+   "value": 9131,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "n_a / (2 k eta_a)",
+   "note": ""
+  },
+  {
+   "quantity": "change of Q with the matched layer doubled from 1a to 2a, N_sep = 4 and 5",
+   "value": [
+    "0.00",
+    "0.00"
+   ],
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 |Q(PML 2a) / Q(PML 1a) - 1| at the reference geometry and at N_sep = 5, n_cl = 12",
+   "note": ""
+  },
+  {
+   "quantity": "admitted records in the dead zone",
+   "value": 436,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "admitted rows with r_d >= 0.14a (preliminary sweep), where the strongest mode is a mode of the finite waveguide at every radius",
+   "note": ""
+  },
+  {
+   "quantity": "admitted records holding a mode of the waveguide",
+   "value": 537,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "admitted rows of the preliminary sweep (n_cl = 6, resolution 20) at N_sep = 1 or r_d >= 0.13a; column waveguide_mode of records.csv",
+   "note": ""
+  },
+  {
+   "quantity": "admitted records holding a cavity mode",
+   "value": 204,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "admitted rows less those holding a mode of the waveguide",
+   "note": ""
+  },
+  {
+   "quantity": "Q of the admitted records holding a mode of the waveguide: smallest, median, largest",
+   "value": [
+    50,
+    53,
+    77
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "preliminary sweep, n_cl = 6, resolution 20, N_sep = 1 or r_d >= 0.13a (records.waveguide_mode)",
+   "note": ""
+  },
+  {
+   "quantity": "median wavelength of the admitted records holding a mode of the waveguide",
+   "value": 1623,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "same records, raw lattice constant",
+   "note": ""
+  },
+  {
+   "quantity": "admitted cavity records of the preliminary sweep",
+   "value": 46,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "admitted rows of the sweep less the waveguide modes",
+   "note": ""
+  },
+  {
+   "quantity": "Q of the admitted cavity records of the preliminary sweep: smallest, largest",
+   "value": [
+    145,
+    660
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "same records",
+   "note": ""
+  },
+  {
+   "quantity": "wavelength range of the admitted cavity records of the preliminary sweep",
+   "value": [
+    1644,
+    1664
+   ],
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "same records, raw lattice constant",
+   "note": ""
+  },
+  {
+   "quantity": "spacing of the peak and the trough of Q over the admitted radii of the fine sweep, 25a cell",
+   "value": "0.020",
+   "unit": "a",
+   "kind": "derived",
+   "derivation": "peak at [0.065], trough at [0.085]",
+   "note": "half the period of the oscillation"
+  },
+  {
+   "quantity": "range of the cell factor G over the fine sweep",
+   "value": [
+    0.58,
+    1.98
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "smallest and largest of the 12 matched ratios Q_PML/Q_absorber after leak removal, r_d = 0.05 to 0.105a",
+   "note": "the 25a cell raises or lowers the quality factor by up to a factor of two"
+  },
+  {
+   "quantity": "per-row decay of the frequency pull of the 25a cell, r_d = 0.100a",
+   "value": [
+    1.81,
+    1.75
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ln of the ratio of successive pulls, N_sep = 3 to 4 and 4 to 5",
+   "note": "close to the barrier coefficient: the pull scales with the rate of coupling to the guide"
+  },
+  {
+   "quantity": "cell-factor change at dx = 0.08a (estimate), dy = 0 and 0.10a",
+   "value": [
+    -1.3,
+    -1.2
+   ],
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "resonance change at the largest dx times d ln G/df = -91.8",
+   "note": "estimate"
+  },
+  {
+   "quantity": "change of Q from resolution 20 to 32, N_sep = 4, n_cl = 8, r_d = 0.040, 0.060, 0.080, 0.100a",
+   "value": [
+    1.4,
+    1.4,
+    0.9,
+    1.4
+   ],
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (Q32 / Q20 - 1), table 2",
+   "note": ""
+  },
+  {
+   "quantity": "largest change of Q from resolution 20 to 32",
+   "value": 1.4,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "largest magnitude over the same radii",
+   "note": ""
+  },
+  {
+   "quantity": "largest change of Q over the displacement series of table 4",
+   "value": 6.3,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "largest |Q/Q(0) - 1| over the transverse series (r_d = 0.050a, 0.060a) and the axial series (dy = 0, 0.10a)",
+   "note": "stated as the bound 'less than 7 per cent' in the abstract, the introduction and the conclusions"
+  }
+ ],
+ "superseded_v9": [
+  {
+   "v3_value": "zone-edge root 1.9607 and 1.7275, least-evanescent complex pair 1.9015 and 1.6673; measured -0.06 and +0.64 % from the first, +3.05 and +4.27 % from the second",
+   "v4_value": "one physical channel, at the zone edge: 1.9620 and 1.7288; measured -0.13 and +0.56 %; the slower root 1.9020 is a truncation artefact",
+   "reason": "the original plane-wave layer kept every eigenvalue of the companion problem of a truncated square basis; the slower roots have their eigenvectors on the outermost G_y rings and no replica with |Re k_y| <= pi/a, and with a circular basis the same root moves to 1.5466 while the physical one stays at 1.9620; the rod permittivity is now 11.9025, as in the FDTD runs"
+  },
+  {
+   "v3_value": "cladding channels 1.3582 at k_x = 0 and 2.3651 at k_x = pi/a; field-map decay 1.3745, 1.20 % from the first",
+   "v4_value": "1.3676 at k_x = 0 and 2.5039 at k_x = pi/a; the field-map decay lies 0.50 % above the first",
+   "reason": "the same truncation artefacts (1.3584 and 2.3662) had been taken for the cladding channels"
+  },
+  {
+   "v3_value": "eta_a >= 0.547, S_th = 649.6 nm/RIU (+0.48 %); 584.0 nm/RIU at n_a = 1.45 (+1.25 %)",
+   "v4_value": "eta_a = 0.552, S_th = 656.3 nm/RIU (+1.51 %); 601.1 nm/RIU at n_a = 1.45 (+4.22 %)",
+   "reason": "the stored permittivity map is what Meep writes, 12 / (sum of the diagonal of the inverse smoothed tensor) at the centred points (reproduced to 9.8e-06), not the <eps> that E_z sees; over the consistent denominator the pure-analyte value is 0.518 (615.1 nm/RIU, -4.87 %) and is no bound above the measurement; mixed points hold 0.231 of the energy"
+  },
+  {
+   "v3_value": "Q_abs = 9131 at eta_a = 0.5467; Q_tot = 3015 and 7101; T_min = 0.109 and 0.605; metric 0.764 and 0.799; optimum 12474; FOM in water 1234 and 2905",
+   "v4_value": "Q_abs = lambda_r / (2 k S) = 9175; Q_tot = 3020 and 7127; T_min = 0.108 and 0.603; metric 0.763 and 0.800; optimum 12533; FOM in water 1235 and 2916",
+   "reason": "the loss to the medium is the imaginary part of the same first-order shift that gives the sensitivity, so the energy fraction the measured sensitivity requires, 0.5441, applies"
+  },
+  {
+   "v3_value": "a/lambda_r = 0.31182 -0.01751 r_d/a -1.77681 (r_d/a)^2 over 7 radii, R^2 = 0.9985; linear R^2 = 0.932, rms 2.5e-03; quadratic rms 3.8e-04",
+   "v4_value": "a/lambda_r = 0.31165 +0.00083 r_d/a -1.99507 (r_d/a)^2 over 6 radii, R^2 = 0.9984; linear R^2 = 0.919, rms 2.0e-03; quadratic rms 2.8e-04",
+   "reason": "the radius 0.12a lies outside the gap window at every row count and is excluded by the validity criterion"
+  },
+  {
+   "v3_value": "the law predicts the 13 points of the fine sweep to within 6.4e-04; its derivative at 0.060a is 2.49 nm/nm against 2.54 from the stencil",
+   "v4_value": "the law predicts the 12 points of the fine sweep to within 2.2e-04; its derivative at 0.060a is 2.57 nm/nm against 2.54 from the stencil",
+   "reason": "excluded points removed from the law and from the fine sweep (0.110a, gap position 0.18)"
+  },
+  {
+   "v3_value": "linear intercepts 0.3181, 0.3157, 0.3154 (0.9 %) and 8 % in the linear slope",
+   "v4_value": "quadratic intercepts 0.3141, 0.3119, 0.3116 (0.78 %) and curvatures -2.47, -2.00, -1.995",
+   "reason": "the paper uses the quadratic law, so the dependence on the row count is quoted for it; admitted radii only"
+  },
+  {
+   "v3_value": "7 radii: ln(Q3/Q2) = 1.52 +- 0.14, ln(Q4/Q3) = 1.551 +- 0.061, leak removed 1.900 +- 0.032, pooled kappa 1.53",
+   "v4_value": "6 radii: ln(Q3/Q2) = 1.63 +- 0.10, ln(Q4/Q3) = 1.518 +- 0.061, leak removed 1.897 +- 0.038, pooled kappa 1.57",
+   "reason": "the radius 0.12a is excluded by the gap criterion; the correction still reduces the scatter, by a factor 1.61"
+  },
+  {
+   "v3_value": "13 matched pairs: R = 0.077 +- 0.006, D = 12.64 +- 0.22 a, c = 0.982 +- 0.024; suppression 8.6",
+   "v4_value": "12 matched pairs: R = 0.076 +- 0.006, D = 12.77 +- 0.26 a, c = 0.978 +- 0.024; suppression 10.2",
+   "reason": "the pair at 0.110a is excluded by the gap criterion (position 0.18)"
+  },
+  {
+   "v3_value": "displacement along the guide has no measurable effect: 0.4 % and 0.6 % at 0.08a, below the discretisation error",
+   "v4_value": "a quadratic decrease of the 25a-cell value, 0.39 % and 0.62 % at 0.08a, 0.63 and 1.02 per a^2; the cell factor, estimated from the resonance shift, falls by 1.30 % and 1.18 %",
+   "reason": "a ratio at fixed resolution carries no common discretisation error, and Q is even in dx by the mirror symmetry of lattice and cell; the cell-factor estimate exceeds the measured change, so the intrinsic change is below about one per cent and its sign is not resolved"
+  },
+  {
+   "v3_value": "a preliminary sweep (n_cl = 6, resolution 20) gives a median Q(dx = 0.08a)/Q(0) of 1.00 (0.99 to 1.01) over 48 groups",
+   "v4_value": "33 of the 48 groups hold modes of the waveguide; the 15 cavity groups give 0.984 (0.979 to 0.986); the statement is withdrawn",
+   "reason": "the admitted records of that sweep at N_sep = 1 or r_d >= 0.13a hold low-Q modes of the finite waveguide (Q 50.2 to 76.6), which the validity criterion admits"
+  },
+  {
+   "v3_value": "a second peak of 5399 at 0.105a; period 0.040a, that is 19 nm; Delta f = 0.01365 between the peaks",
+   "v4_value": "one peak (0.065a) and one trough (0.085a) among the admitted radii, 0.020a apart; Q rises again to 5399 at 0.105a, the last admitted radius",
+   "reason": "the second peak needs the radius 0.110a, which lies outside the gap window"
+  }
+ ],
+ "references_added_v9": [
+  {
+   "key": "botten2004",
+   "doi": "10.1103/PhysRevE.70.056606",
+   "where": "section 4: Bloch-mode methods for barriers, interfaces and terminations"
+  },
+  {
+   "key": "white2004",
+   "doi": "10.1103/PhysRevE.70.056607",
+   "where": "section 4: Bloch-mode description of barriers and terminations"
+  },
+  {
+   "key": "istrate2006",
+   "doi": "10.1103/RevModPhys.78.455",
+   "where": "section 4"
+  },
+  {
+   "key": "xu2000",
+   "doi": "10.1103/PhysRevE.62.7389",
+   "where": "section 4: scattering theory of waveguide-resonator coupling"
+  },
+  {
+   "key": "waks2005",
+   "doi": "10.1364/OPEX.13.005064",
+   "where": "section 4"
+  },
+  {
+   "key": "sauvan2005",
+   "doi": "10.1103/PhysRevB.71.165118",
+   "where": "section 4: reflection of the guided Bloch mode at microcavity mirrors"
+  }
+ ],
+ "references_removed_v9": [
+  "cetinkaya2025",
+  "cokduygulular2025",
+  "gupta2023"
+ ],
+ "literature_v9": [
+  {
+   "key": "kou1993",
+   "values": "absorption coefficient of water at 1550 nm 11.92 1/cm, 10 % above the 10.8 1/cm used; Q_abs 8.3e3",
+   "kind": "literature"
+  },
+  {
+   "quantity": "refractive index of water at 1550 nm (literature, section 3.1)",
+   "value": 1.32,
+   "unit": "",
+   "kind": "literature",
+   "key": "hale1973",
+   "derivation": "Hale and Querry 1973 (about 1.32 at 1550 nm); Saunders et al. 2016, Appl. Opt. 55 947, measure 1.3164 at 298 K; the nominal design index 1.33 lies inside the analyte sweep 1.30 to 1.45"
+  }
+ ],
+ "corrected_v9_note": "Manuscript version 9 (24 September 2026) recomputes the paper with SPRAT 1.1.0: the complex band structure keeps physical roots only (the least-evanescent pair of earlier versions is a truncation artefact of the square plane-wave basis); fits and statistics use the records admitted by the validity criterion only; the analyte energy fraction is evaluated with the permittivity E_z sees, reconstructed from the geometry (the stored map is Meep's harmonic mean of the eigenvalues of the smoothed tensor); Q_abs = lambda_r / (2 k S). Section corrected_v9 lists every number new in version 9, superseded_v9 the statements of version 8 it corrects, both recomputed from the records. The dataset rows of corrected_v9 state that the strongest mode of 537 of the 741 admitted records, those of the preliminary sweep (n_cl = 6, resolution 20) at N_sep = 1 or r_d >= 0.13a, is a low-Q mode of the finite waveguide (436 of them in the dead zone r_d >= 0.14a), and that 204 admitted records hold a cavity mode; records.csv flags the former in the column waveguide_mode.",
+ "termination": [
+  {
+   "quantity": "Fano q in the 25a cell, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    -0.0342,
+    0.2129,
+    0.4084,
+    0.5006,
+    0.4601,
+    0.2946,
+    0.0546
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Fano fit over the whole window (the routine of 48_fano_karsilastir_S4b.py), each spectrum over the reference of its own termination",
+   "note": "the spectra of section 3.5"
+  },
+  {
+   "quantity": "Fano q with the guide continued into the absorber, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    -0.0213,
+    -0.0238,
+    -0.0205,
+    -0.0142,
+    -0.0062,
+    0.0014,
+    0.0061
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Fano fit over the whole window (the routine of 48_fano_karsilastir_S4b.py), each spectrum over the reference of its own termination",
+   "note": "every other run parameter as the 25a-cell spectrum of the same index"
+  },
+  {
+   "quantity": "factor |q| in the 25a cell over |q| with the absorber, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    1.61,
+    8.95,
+    19.94,
+    35.19,
+    74.31,
+    213.41,
+    8.98
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ratio of the two fits",
+   "note": ""
+  },
+  {
+   "quantity": "grade by the criterion fixed before the runs (D-22), n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    "inconclusive",
+    "supports",
+    "supports",
+    "supports",
+    "supports",
+    "supports",
+    "supports"
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": ">= 3 supports, <= 1.5 refutes, otherwise inconclusive",
+   "note": ""
+  },
+  {
+   "quantity": "grade by the amended criterion (A1), n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    "not graded",
+    "supports",
+    "supports",
+    "supports",
+    "supports",
+    "supports",
+    "not graded"
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the ratio graded where |q| in the 25a cell exceeds 0.2",
+   "note": ""
+  },
+  {
+   "quantity": "verdict by the criterion fixed before the runs (D-22)",
+   "value": "not a pass: inconclusive at n_a = 1.300",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "pass = supports at all seven indices",
+   "note": ""
+  },
+  {
+   "quantity": "verdict by the amended criterion (A1)",
+   "value": "pass",
+   "unit": "",
+   "kind": "derived",
+   "derivation": "pass = supports at the five graded indices",
+   "note": ""
+  },
+  {
+   "quantity": "A1 threshold of |q| in the 25a cell for grading the ratio",
+   "value": 0.2,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "fixed 2026-09-24 15:46:39 +03:00 before the first absorber cavity spectrum",
+   "note": ""
+  },
+  {
+   "quantity": "Q from the Fano fit with the absorber, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    5148,
+    4621,
+    4168,
+    3758,
+    3395,
+    3075,
+    2790
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "lambda_r / fwhm of the fit",
+   "note": ""
+  },
+  {
+   "quantity": "Q from the Fano fit in the 25a cell, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    8510,
+    7323,
+    5854,
+    4374,
+    3104,
+    2185,
+    1694
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "lambda_r / fwhm of the fit",
+   "note": ""
+  },
+  {
+   "quantity": "t_end/tau of the absorber spectra, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    "4.60",
+    4.72,
+    4.59,
+    4.74,
+    4.91,
+    5.05,
+    5.22
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "tau = Q / (pi f_r); gate G5 requires 3",
+   "note": ""
+  },
+  {
+   "quantity": "largest transmission near resonance with the absorber, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    0.997,
+    0.997,
+    0.997,
+    0.995,
+    0.992,
+    "0.990",
+    0.991
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "within five linewidths of the fitted resonance",
+   "note": ""
+  },
+  {
+   "quantity": "largest |q| with the absorber",
+   "value": 0.024,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "over the seven spectra",
+   "note": ""
+  },
+  {
+   "quantity": "factor at the five graded indices: smallest, largest",
+   "value": [
+    8.95,
+    213.41
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "n_a = 1.325 to 1.425",
+   "note": ""
+  },
+  {
+   "quantity": "largest transmission near resonance with the absorber, over the seven spectra",
+   "value": 0.997,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "within five linewidths of the fitted resonance",
+   "note": ""
+  },
+  {
+   "quantity": "largest fit rms: 25a cell, absorber",
+   "value": [
+    0.023,
+    0.014
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "gate G4 requires 0.05",
+   "note": ""
+  },
+  {
+   "quantity": "smallest distance of an absorber resonance from the window edge",
+   "value": 17.1,
+   "unit": "linewidths",
+   "kind": "derived",
+   "derivation": "gate G3 requires 5",
+   "note": ""
+  },
+  {
+   "quantity": "S1: absorber Q interpolated to n_a = 1.33",
+   "value": 4530,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "linear interpolation between n_a = 1.325 and 1.350",
+   "note": ""
+  },
+  {
+   "quantity": "S1: deviation of the interpolated absorber Q from the harmonic-inversion value",
+   "value": 0.8,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "against 4495.1, the absorber cell at n_a = 1.33 (record v4_H4b_s4); tolerance 5 %",
+   "note": ""
+  },
+  {
+   "quantity": "cell factor G = Q(25a cell) / Q(absorber) from the spectra, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    1.653,
+    1.585,
+    1.404,
+    1.164,
+    0.914,
+    "0.710",
+    0.607
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "ratio of the two Fano quality factors (amendment A2)",
+   "note": ""
+  },
+  {
+   "quantity": "reflectionless Q_w = Q(harmonic inversion, 25a cell) / G, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    5037,
+    4541,
+    4114,
+    3714,
+    3343,
+    3009,
+    2737
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "harmonic-inversion Q of the 25a cell (8327 to 1662) over the cell factor",
+   "note": ""
+  },
+  {
+   "quantity": "Q of the 25a cell by harmonic inversion, n_a = 1.300 to 1.450 in steps of 0.025",
+   "value": [
+    8327,
+    7196,
+    5778,
+    4323,
+    3057,
+    2138,
+    1662
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "the harmonic-inversion Q of the analyte sweep at that index, rounded (the q_est of each spectrum run)",
+   "note": ""
+  },
+  {
+   "quantity": "cell factor G at n_a = 1.300 and 1.450",
+   "value": [
+    1.65,
+    0.61
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "from the spectra",
+   "note": ""
+  },
+  {
+   "quantity": "reflectionless Q_w at n_a = 1.300 and 1.450",
+   "value": [
+    5040,
+    2740
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "from the spectra",
+   "note": ""
+  },
+  {
+   "quantity": "fall of the reflectionless Q_w over the analyte sweep",
+   "value": 1.84,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_w(1.300) / Q_w(1.450)",
+   "note": ""
+  },
+  {
+   "quantity": "opening of the reflectionless linewidth over the analyte sweep",
+   "value": 1.95,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "(lambda_r / Q_w) at 1.450 over that at 1.300",
+   "note": ""
+  },
+  {
+   "quantity": "opening of the linewidth of the 25a cell over the analyte sweep",
+   "value": 5.3,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "(lambda_r / Q) at 1.450 over that at 1.300, harmonic-inversion Q, lambda_r of the fit",
+   "note": ""
+  },
+  {
+   "quantity": "cell factor G interpolated to n_a = 1.33 from the spectra",
+   "value": 1.549,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "linear interpolation between 1.325 and 1.350",
+   "note": ""
+  },
+  {
+   "quantity": "cell factor at n_a = 1.33 from harmonic inversion, 25a cell over absorber",
+   "value": 1.5411,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "6927.17 / 4495.09, the longest-signal records of the two terminations; 1.5423 with the cladding leak removed",
+   "note": ""
+  }
+ ],
+ "corrected_v10": [
+  {
+   "quantity": "share of the harmonic-inversion records admitted and holding a cavity mode",
+   "value": 23.78,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "admitted records holding a cavity mode over the harmonic-inversion records",
+   "note": ""
+  },
+  {
+   "quantity": "Q drop over the sweep",
+   "value": 5.01,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q(1.300)/Q(1.450)",
+   "note": ""
+  }
+ ],
+ "corrected_v10_note": "Manuscript version 10 (24 September 2026) adds the transmission spectra with the guide continued into an 8a adiabatic absorber, every other run parameter as the 25a-cell spectrum of the same analyte index (raw_h14b.tar.gz of the record; section termination). The criterion fixed before those runs (D-22: factor = |q| in the 25a cell over |q| with the absorber, >= 3 supports and <= 1.5 refutes the attribution of the residual asymmetry to the guide ends, pass = supports at all seven indices) is not passed: the factor at n_a = 1.300 is 1.61, inconclusive. Its amendment A1, fixed at 15:46:39 (+03:00) before the first absorber cavity spectrum was written (15:53:07), grades the ratio at the five indices where |q| in the 25a cell exceeds 0.2 and is passed there (factors 8.95 to 213.41). Amendment A2 measures the cell factor G across the analyte sweep. Version 10 also states the share of the harmonic-inversion records admitted and holding a cavity mode (corrected_v10) and registers the fall of the quality factor of the 25a cell over the analyte sweep, 5.01, which section 3.6 printed without a row, updates the number of transmission spectra of the record to 14 and the absorption cap of the abstract to near 9200, and renames two quantities, the records of the systematic runs and the threshold-mask estimate of the analyte energy fraction (the registry of version 9 has their earlier names).",
+ "derived_v10_2": [
+  {
+   "quantity": "reflectionless Q_w at the rows of table 5, n_a = 1.305, 1.330, 1.350, 1.375, 1.400, 1.425, 1.445",
+   "value": [
+    4938,
+    4502,
+    4114,
+    3714,
+    3343,
+    3009,
+    2792
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "harmonic inversion with the absorber and the leak removed at n_a = 1.330 (Q_w(4) of the series); Q(harmonic inversion, 25a cell) / G of the absorber spectra at 1.350 to 1.425; linear interpolation in n_a of that Q_w at 1.305 and 1.445",
+   "note": ""
+  },
+  {
+   "quantity": "reflectionless FOM_w at the rows of table 5, n_a = 1.305, 1.330, 1.350, 1.375, 1.400, 1.425, 1.445",
+   "value": [
+    2079,
+    1842,
+    1644,
+    1440,
+    1255,
+    1090,
+    979
+   ],
+   "unit": "1/RIU",
+   "kind": "derived",
+   "derivation": "S Q_w / lambda_r with the local sensitivity and resonance of the analyte sweep",
+   "note": ""
+  },
+  {
+   "quantity": "sources of Q_w at the rows of table 5",
+   "value": [
+    "interpolated",
+    "harmonic inversion, absorber, leak removed",
+    "spectra",
+    "spectra",
+    "spectra",
+    "spectra",
+    "interpolated"
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "see the reflectionless Q_w row",
+   "note": ""
+  },
+  {
+   "quantity": "spectral Q_w interpolated to n_a = 1.33",
+   "value": 4455,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "Q_w of the absorber spectra at 1.325 and 1.350 interpolated linearly in n_a",
+   "note": ""
+  },
+  {
+   "quantity": "deviation of the spectral Q_w interpolated to n_a = 1.33 from the harmonic-inversion value",
+   "value": -1.0,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "against the harmonic-inversion Q_w(4) with the leak removed",
+   "note": ""
+  },
+  {
+   "quantity": "Q_abs with the mixed points counted wholly as analyte and wholly as silicon",
+   "value": [
+    "6.7e3",
+    "9.6e3"
+   ],
+   "unit": "",
+   "kind": "derived",
+   "derivation": "n_a / (2 k eta_a) with the Hellmann-Feynman eta_a of the field map, mixed points as analyte (0.749) or as silicon (0.518)",
+   "note": ""
+  },
+  {
+   "quantity": "change of f_r from resolution 20 to 32, N_sep = 4, n_cl = 8, r_d = 0.040, 0.060, 0.080, 0.100a",
+   "value": [
+    0.0205,
+    0.0007,
+    0.0172,
+    -0.0227
+   ],
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (f32 / f20 - 1), the pairs of table 2",
+   "note": ""
+  },
+  {
+   "quantity": "largest change of f_r from resolution 20 to 32",
+   "value": 0.023,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "largest magnitude over the same radii",
+   "note": ""
+  },
+  {
+   "quantity": "largest shift of lambda_r from resolution 20 to 32",
+   "value": 0.37,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "raw lattice constant, same radii",
+   "note": ""
+  },
+  {
+   "quantity": "change of f_r from resolution 24 to 32 at the reference radius, N_sep = 5",
+   "value": 0.029,
+   "unit": "%",
+   "kind": "derived",
+   "derivation": "100 (f32 / f24 - 1), records v4_H8_s5 and v4_H1b_s5 (n_cl = 12)",
+   "note": ""
+  },
+  {
+   "quantity": "shift of lambda_r from resolution 24 to 32 at the reference radius, scaled to 1550 nm",
+   "value": 0.46,
+   "unit": "nm",
+   "kind": "derived",
+   "derivation": "|a/f32 - a/f24| x lambda_t / lambda_r of the reference point",
+   "note": ""
+  },
+  {
+   "quantity": "defect radius of the reference geometry in pixels at resolution 24",
+   "value": 1.44,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "r_d x resolution",
+   "note": ""
+  },
+  {
+   "quantity": "guided-mode wavevector beta at the reference resonance",
+   "value": 0.5465,
+   "unit": "pi/a",
+   "kind": "derived",
+   "derivation": "W1 band of the plane-wave record at f_r = 0.30461",
+   "note": ""
+  },
+  {
+   "quantity": "per-row factor of the slowest channel at k_x = 0, reference resonance",
+   "value": 3.93,
+   "unit": "",
+   "kind": "derived",
+   "derivation": "exp(kappa_pred at k_x = 0 = 1.3676): the channel evaluated off the guided-mode wavevector",
+   "note": ""
+  }
+ ],
+ "literature_v10_2": [
+  {
+   "key": "poblet2025",
+   "kind": "literature",
+   "values": "one-dimensional photonic crystal cavities of SiO2/Si nanopillars 210 nm in diameter (lattice constant 350 nm, 1100 nm of SiO2 under 1300 nm of Si) on silicon-on-insulator, TM-like modes: Q about 4e3 measured on isolated cavities with a tapered fibre (Lorentzian fit); cavities integrated beside an on-chip waveguide fabricated as well",
+   "source": "Nanophotonics 14 2953-61 (2025): abstract, section 2 and figure 1"
+  }
+ ],
+ "references_added_v10_2": [
+  {
+   "key": "fan2002",
+   "doi": "10.1063/1.1448174",
+   "where": "section 3.5: partially reflecting elements in the guide make the line of a side-coupled cavity asymmetric"
+  },
+  {
+   "key": "delasson2018",
+   "doi": "10.1364/OE.26.011366",
+   "where": "section 4: a benchmark of five methods on photonic crystal membrane cavities finds far larger disagreement on Q than on the resonance wavelength (spreads of about 0.3 to 0.5 % in wavelength, 17 % and more in Q)"
+  },
+  {
+   "key": "poblet2025",
+   "doi": "10.1515/nanoph-2025-0232",
+   "where": "section 4: pillar cavities of the TM kind exist, 210 nm pillars against a defect rod 57 nm across at 1550 nm"
+  }
+ ],
+ "derived_v10_2_note": "Manuscript version 10.2 (25 September 2026) adds: the reflectionless quality factor and figure of merit at the rows of table 5 and in figure 7 (the harmonic-inversion value with the absorber at n_a = 1.330, Q/G of the absorber spectra at 1.350 to 1.425, linear interpolation at 1.305 and 1.445); one analyte index under both guide terminations in figure 6; the absorption-limited quality factor with the mixed points of the grid counted wholly as analyte or wholly as silicon; the convergence of the resonance frequency with resolution; the guided-mode wavevector at which the barrier channel is evaluated and the per-row factor the same frequency gives at k_x = 0; three references. Section derived_v10_2 holds their numbers."
+}

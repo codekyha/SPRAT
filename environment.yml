@@ -1,0 +1,13 @@
+name: sprat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pymeep=1.30.*
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - psutil
+  - pytest
+  - pip

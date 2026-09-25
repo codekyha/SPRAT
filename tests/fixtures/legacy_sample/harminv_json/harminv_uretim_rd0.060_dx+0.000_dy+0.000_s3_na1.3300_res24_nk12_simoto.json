@@ -1,0 +1,68 @@
+{
+ "parametreler": {
+  "mod": "harminv",
+  "katman": "uretim",
+  "a_nm": 481.4,
+  "r": 0.2,
+  "rd": 0.06,
+  "dx": 0.0,
+  "dy": 0.0,
+  "nsep": 3,
+  "na": 1.33,
+  "kappa": 0.0,
+  "nx": 25,
+  "nkaplama": 12,
+  "res": 24,
+  "nfreq": 201,
+  "t_harminv": 4600.0,
+  "dpml": 1.0,
+  "pad": 1.5,
+  "ypad": 1.0,
+  "fcen": 0.3105806451612903,
+  "df": 0.06,
+  "f_rez": 0.0,
+  "q_tahmin": 7000.0,
+  "dft_tol": 1e-06,
+  "t_max_spektrum": 40000.0,
+  "t_max_harminv": 30000.0,
+  "t_alan_max": 20000.0,
+  "otomatik_t": false,
+  "otomatik_kat": 4.0,
+  "simetri": "oto",
+  "etiket": "harminv_uretim_rd0.060_dx+0.000_dy+0.000_s3_na1.3300_res24_nk12_simoto",
+  "zorla": false,
+  "sessiz": true,
+  "kavite": true
+ },
+ "olcum": {
+  "baslangic": "2026-08-31T15:37:41",
+  "dugum": "a047",
+  "adim": 228801,
+  "zaman": 4766.6875,
+  "piksel": 501120,
+  "simetri": "cift",
+  "duvar_s": 164.20206832885742,
+  "piksel_adim": 57328378560.0,
+  "piksel_adim_s": 349133108.6353004
+ },
+ "sonuc": {
+  "modlar": [
+   {
+    "f": 0.3047539279034452,
+    "Q": 987.2730240526414,
+    "genlik": 5.480749743192008,
+    "hata": 2.9294014032016555e-12,
+    "lambda_nm": 1579.6350954745408,
+    "FWHM_nm": 1.5999982345211072
+   }
+  ],
+  "t_harminv_kullanilan": 4600.0,
+  "otomatik_gecmis": [
+   {
+    "t": 4600.0,
+    "Q": 987.2730240526414
+   }
+  ],
+  "Q_cozunurluk_siniri": 4488.3022166550845
+ }
+}

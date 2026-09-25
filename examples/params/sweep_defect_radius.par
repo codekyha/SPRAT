@@ -1,0 +1,18 @@
+# The fine sweep of the defect radius (13 points) at N_sep = 4 in the reference cell.
+[run]
+mode = harminv
+tag = sweep_fine
+q_est = 8000
+
+[analyte]
+n = 1.33
+
+[numerics]
+resolution = 24
+
+[harminv]
+t = auto
+margin = 2.5
+
+[sweep]
+structure.defect.radius = 0.050 : 0.110 : 0.005

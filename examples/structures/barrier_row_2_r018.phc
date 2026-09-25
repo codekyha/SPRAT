@@ -1,0 +1,21 @@
+# The barrier-row knob: the second row between the guide and the cavity gets radius 0.18a.
+[lattice]
+a_nm = 481.4
+rod_radius = 0.20
+rod_eps = 11.9025
+
+[cell]
+guide_periods = 25
+cladding_rows = 12
+termination_x = pml
+
+[waveguide]
+type = W1
+
+[defect]
+type = rod
+radius = 0.060
+row = 4
+
+[rows]
+2 = 0.18

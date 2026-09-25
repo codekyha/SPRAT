@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sprat"
+version = "1.2.1"
+description = "SPRAT: Side-coupled Photonic-crystal Resonator Analysis Toolkit. Two-dimensional FDTD/MPB/plane-wave workflow for side-coupled photonic-crystal microcavities in liquid analytes, with a workstation parallel runner, an English record schema, the analysis layer and the figures of the accompanying paper."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Hasan Oguz", email = "hasan.oguz@okan.edu.tr"}]
+keywords = ["photonic crystal", "microcavity", "FDTD", "Meep", "MPB", "plane-wave expansion",
+            "quality factor", "refractive-index sensing", "harmonic inversion", "reproducibility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "psutil>=5.9"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.7"]
+tables = ["pandas>=2.0"]
+dev = ["pytest>=7", "matplotlib>=3.7", "pandas>=2.0"]
+
+[project.scripts]
+sprat = "sprat.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/codekyha/sprat"
+Issues = "https://github.com/codekyha/sprat/issues"
+
+[tool.setuptools.packages.find]
+include = ["sprat*"]
+
+[tool.setuptools.package-data]
+sprat = ["data/*.json", "data/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["slow: takes more than a few seconds (plane-wave layer); deselect with -m 'not slow'"]
