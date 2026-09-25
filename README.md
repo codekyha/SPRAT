@@ -550,3 +550,5 @@ SPRAT was written by the author with coding assistance from Claude (Anthropic; C
 and Claude Fable 5) and Gemini (Google; Gemini 3.6 Flash and Gemini 3.1 Pro), used in tandem under
 the author's supervision; the author is responsible for its design, its physics and its
 verification.
+
+This software and dataset are provided "as is" without warranty of any kind, express or implied, or commitment to ongoing maintenance or support.
