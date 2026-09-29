@@ -32,6 +32,8 @@ sprat = "sprat.cli:main"
 [project.urls]
 Homepage = "https://github.com/codekyha/sprat"
 Issues = "https://github.com/codekyha/sprat/issues"
+Paper = "https://arxiv.org/abs/2609.31952"
+Archive = "https://doi.org/10.5281/zenodo.22912910"
 
 [tool.setuptools.packages.find]
 include = ["sprat*"]

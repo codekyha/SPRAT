@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased (documentation only)
+
+- 29 September 2026: the preprint of the paper, arXiv:2609.31952 (physics.optics), and the published
+  record 10.5281/zenodo.22912910 (version 3.1.0) are named in `README.md` (introduction, section 9,
+  section 12 with BibTeX entries), `CITATION.cff` (preferred citation: the preprint; the record under
+  `references`), `codemeta.json`, `.zenodo.json`, `pyproject.toml` (project URLs) and
+  `docs/DATA_AVAILABILITY.md`. No code changed; the version stays 1.2.1 and the archived
+  `sprat-1.2.1.zip` of the record is unaffected.
+
 ## 1.2.1 (2026-09-25)
 
 The release that manuscript version 10.2 and version 3.1.0 of the data record rest on.

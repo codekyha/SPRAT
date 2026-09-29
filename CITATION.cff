@@ -1,5 +1,7 @@
 cff-version: 1.2.0
-message: "If you use SPRAT, please cite the Zenodo record that holds SPRAT 1.2.1 together with the data set of the paper, and the paper."
+message: >-
+  If you use SPRAT, please cite the paper (preprint arXiv:2609.31952) and the Zenodo record
+  10.5281/zenodo.22912910, which holds SPRAT 1.2.1 together with the data set of the paper.
 type: software
 title: "SPRAT: Side-coupled Photonic-crystal Resonator Analysis Toolkit"
 version: 1.2.1
@@ -41,20 +43,42 @@ identifiers:
   - type: url
     value: "https://github.com/codekyha/sprat"
     description: "Repository in which SPRAT is maintained"
+  - type: other
+    value: "arXiv:2609.31952"
+    description: "Preprint of the paper that SPRAT accompanies (physics.optics)"
 preferred-citation:
-  type: data
-  title: "Data, code and supplementary material for: Discrete quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch tunnelling and the finite-cell correction"
+  type: article
+  title: "Discrete quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch tunnelling and the finite-cell correction"
   authors:
     - family-names: Oguz
       given-names: Hasan
       orcid: "https://orcid.org/0000-0001-7484-4415"
       affiliation: "Istanbul Okan University; Pamukkale University"
-  version: 3.1.0
   year: 2026
-  doi: 10.5281/zenodo.22912910
-  url: "https://doi.org/10.5281/zenodo.22912910"
-  publisher:
-    name: Zenodo
-  license:
-    - CC-BY-4.0
-    - MIT
+  month: 9
+  journal: "arXiv preprint"
+  url: "https://arxiv.org/abs/2609.31952"
+  identifiers:
+    - type: other
+      value: "arXiv:2609.31952"
+      description: "arXiv identifier of the preprint (primary class physics.optics)"
+  notes: >-
+    Preprint of the paper that SPRAT accompanies. The Zenodo record 10.5281/zenodo.22912910
+    (version 3.1.0) holds the data set of the paper, the supplementary document and SPRAT 1.2.1.
+references:
+  - type: data
+    title: "Data, code and supplementary material for: Discrete quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch tunnelling and the finite-cell correction"
+    authors:
+      - family-names: Oguz
+        given-names: Hasan
+        orcid: "https://orcid.org/0000-0001-7484-4415"
+        affiliation: "Istanbul Okan University; Pamukkale University"
+    version: 3.1.0
+    year: 2026
+    doi: 10.5281/zenodo.22912910
+    url: "https://doi.org/10.5281/zenodo.22912910"
+    publisher:
+      name: Zenodo
+    license:
+      - CC-BY-4.0
+      - MIT

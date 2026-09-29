@@ -5,10 +5,10 @@ time-domain (FDTD), plane-wave and band-structure study of a point-defect microc
 side-coupled to a W1 waveguide in a square lattice of dielectric rods immersed in a liquid
 analyte. It re-implements the workflow of the computational runs behind the paper "Discrete
 quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch
-tunnelling and the finite-cell correction" (H. Oguz). The records of that paper's data set were
-produced on the UHeM Altay cluster by the original scripts of 2026 (`02_kavite.py` with the v4
-patch, Meep 1.30.0) and converted into the SPRAT schema with `sprat import-legacy`; SPRAT converts
-and analyses them and can regenerate each record with Meep.
+tunnelling and the finite-cell correction" (H. Oguz; preprint arXiv:2609.31952). The records of
+that paper's data set were produced on the UHeM Altay cluster by the original scripts of 2026
+(`02_kavite.py` with the v4 patch, Meep 1.30.0) and converted into the SPRAT schema with
+`sprat import-legacy`; SPRAT converts and analyses them and can regenerate each record with Meep.
 
 * the photonic-crystal **structure is read from a text file** (`.phc`);
 * the **run parameters are read from a second text file** (`.par`), including sweeps;
@@ -459,7 +459,7 @@ Meep 1.30 from `environment.yml` and runs `sprat check` and `sprat selftest --re
 ```bash
 sprat deposit records -o deposit_v3 --tables tables --raw-legacy raw_legacy --raw-h14b raw_h14b --version 3.1.0 \
       --include supplementary.pdf sprat-1.2.1.zip \
-      --data-doi 10.5281/zenodo.22912910 --software-doi 10.5281/zenodo.22912910 [--arxiv-id 2609.xxxxx]
+      --data-doi 10.5281/zenodo.22912910 --software-doi 10.5281/zenodo.22912910 --arxiv-id 2609.31952
 ```
 
 builds the data pack: flat tables, tarballs of the records by mode, the analysis outputs with
@@ -491,20 +491,20 @@ integration stays switched off for this repository.
 
 ### Release checklist
 
-1. The DOI of the record is reserved on Zenodo: 10.5281/zenodo.22912910 (a draft that holds the
-   software and the data).
+1. The record 10.5281/zenodo.22912910 holds the software and the data; its version 3.1.0 is
+   published (September 2026).
 2. Push the repository to GitHub; leave Zenodo's GitHub integration switched off, otherwise a
    release mints a second DOI. A GitHub release `v1.2.1` can be published as usual.
-3. Submit the preprint to arXiv and note its identifier once it is listed.
+3. The preprint is listed as arXiv:2609.31952 (physics.optics, September 2026).
 4. Build the release archive `sprat-1.2.1.zip` from the files Git commits, and the data pack with
    `--version 3.1.0 --data-doi 10.5281/zenodo.22912910 --software-doi 10.5281/zenodo.22912910
    --raw-legacy raw_legacy --raw-h14b raw_h14b --include supplementary.pdf sprat-1.2.1.zip`, with
-   `--arxiv-id` once the identifier exists (or enter it in the draft as a related work, *Is
-   supplement to*, preprint).
-5. Upload the files of the pack into the reserved draft and publish it. If an earlier version of
-   the record has already been published, create a new version of it instead: Zenodo then mints
-   a new DOI for 3.1.0, and the manuscript should cite that DOI or the concept DOI. The journal
-   DOI (relation *Is supplement to*) is added to the record's metadata later.
+   `--arxiv-id 2609.31952`. The files of the published record 3.1.0 were built before the identifier
+   existed; the record names the preprint as a related work (*Is supplement to*) in its metadata.
+5. Upload the files of the pack into the draft and publish it. A later version of the pack goes
+   into a new version of the record: Zenodo then mints a new DOI for it, and a manuscript cites
+   that DOI or the concept DOI. The journal DOI (relation *Is supplement to*) is added to the
+   record's metadata later.
 
 ---
 
@@ -539,12 +539,41 @@ where Meep is installed (`sprat selftest`).
 
 ## 12. Citing
 
-SPRAT 1.2.1 is archived together with the data set of the paper in one Zenodo record,
-https://doi.org/10.5281/zenodo.22912910 (the file `sprat-1.2.1.zip`; the DOI resolves once the record
-is published). Please cite that record and the paper. Funding of the original computations:
-Istanbul Okan University BAP OBAP2026010006, Pamukkale University BAP 2025ALDEP037, UHeM grant
-5027772026 (UHeM Altay cluster). Licence: MIT (software); the data set is CC BY 4.0, and the
-scripts inside its `raw_legacy.tar.gz` and `raw_h14b.tar.gz` are MIT.
+SPRAT accompanies the paper "Discrete quality-factor control in a side-coupled photonic crystal
+microcavity: evanescent Bloch tunnelling and the finite-cell correction" (H. Oguz, 2026), available
+as the preprint arXiv:2609.31952 (https://arxiv.org/abs/2609.31952). SPRAT 1.2.1 is archived
+together with the data set of the paper in one Zenodo record, https://doi.org/10.5281/zenodo.22912910
+(version 3.1.0; the file `sprat-1.2.1.zip`). Please cite the paper and the record. `CITATION.cff`
+carries both, and GitHub's "Cite this repository" button reads it. The journal version, once
+published, replaces the preprint in this citation.
+
+```bibtex
+@misc{oguz2026discretequalityfactorcontrolsidecoupled,
+  title         = {Discrete quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch tunnelling and the finite-cell correction},
+  author        = {Hasan Oguz},
+  year          = {2026},
+  eprint        = {2609.31952},
+  archivePrefix = {arXiv},
+  primaryClass  = {physics.optics},
+  url           = {https://arxiv.org/abs/2609.31952}
+}
+
+@misc{oguz2026sprat_record,
+  title     = {Data, code and supplementary material for: Discrete quality-factor control in a side-coupled photonic crystal microcavity: evanescent Bloch tunnelling and the finite-cell correction},
+  author    = {Hasan Oguz},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {3.1.0},
+  doi       = {10.5281/zenodo.22912910},
+  url       = {https://doi.org/10.5281/zenodo.22912910},
+  note      = {Zenodo record; holds the data set, the supplementary document and SPRAT 1.2.1 (sprat-1.2.1.zip)}
+}
+```
+
+Funding of the original computations: Istanbul Okan University BAP OBAP2026010006, Pamukkale
+University BAP 2025ALDEP037, UHeM grant 5027772026 (UHeM Altay cluster). Licence: MIT (software);
+the data set is CC BY 4.0, and the scripts inside its `raw_legacy.tar.gz` and `raw_h14b.tar.gz`
+are MIT.
 
 SPRAT was written by the author with coding assistance from Claude (Anthropic; Claude Opus 5.5
 and Claude Fable 5) and Gemini (Google; Gemini 3.6 Flash and Gemini 3.1 Pro), used in tandem under
